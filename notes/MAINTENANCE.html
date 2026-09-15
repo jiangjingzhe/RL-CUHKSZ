@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CSC6129 强化学习中文自学笔记，保留原例、公式与推导。">
+<title>维护说明 · 强化学习自学笔记</title>
+<link rel="stylesheet" href="vendor/katex/dist/katex.min.css"><link rel="stylesheet" href="reader.css">
+</head><body>
+<a class="skip" href="#content">跳到正文</a>
+<aside class="sidebar"><div class="brand">CSC6129<span>强化学习 · 中文自学笔记</span></div>
+<nav aria-label="章节导航"><a  href="index.html">学习入口</a>
+<a  href="week01.html">第 1 周 · 强化学习导论</a>
+<a  href="week02.html">第 2 周 · 多臂老虎机</a>
+<a  href="week02-appendix.html">第 2 周 · 附录证明</a>
+<a  href="glossary.html">术语与符号</a>
+<a  href="coverage.html">逐页对应表</a>
+<a  href="source-pages.html">原页图库</a></nav>
+<details class="page-toc" open><summary>本页目录</summary><nav aria-label="本页目录"><a href="#heading-1">文件分工</a>
+<a href="#heading-2">只修改文字时</a>
+<a href="#heading-3">替换源课件或增加周次时</a>
+<a href="#heading-4">内容检查约定</a>
+<a href="#heading-5">修改日志</a></nav></details>
+<p class="reader-tip">查找内容：⌘F / Ctrl+F<br>公式可直接阅读，图片可放大查看。</p></aside>
+<main id="content"><div class="eyebrow">课程笔记 / 2026 秋季</div><article><h1>笔记维护说明</h1>
+<p><a href="index.html">返回学习入口</a></p>
+<p>日常学习直接打开 <code>index.html</code>。本页供修改笔记或加入新一周材料时使用。</p>
+<h2 id="heading-1">文件分工</h2>
+<ul>
+<li><code>week01.md</code>、<code>week02.md</code>：每周内容的唯一原稿。</li>
+<li><code>week02-appendix.md</code>：完整证明，与正文互相链接。</li>
+<li><code>README.md</code>：学习入口。生成时转换为 <code>index.html</code>。</li>
+<li><code>glossary.md</code>：统一术语与符号，不重复维护整章解释。</li>
+<li><code>coverage.md</code>、<code>source-pages.md</code>、<code>sources.json</code>：由 <code>tools/sources.py</code> 生成的溯源资料。</li>
+<li><code>assets/weekXX/page-YY.jpg</code>：原 PDF 实际页面，正文和图库共用同一文件；这些图片是公开网页的原页素材。</li>
+<li><code>*.html</code>：生成的阅读版，日常修改不要直接编辑。</li>
+<li><code>reader.css</code>：离线阅读样式。</li>
+<li><code>tools/build.mjs</code>：将 Markdown 和公式转换为离线 HTML。</li>
+<li><code>vendor</code>：阅读与生成所需的公开组件，保留原许可证。公式使用 KaTeX 0.16.22；Markdown 使用随工作环境提供并复制到本目录的 Marked 组件。</li>
+</ul>
+<h2 id="heading-2">只修改文字时</h2>
+<p>编辑对应 Markdown，再在 <code>notes</code> 目录运行：</p>
+<pre><code class="language-sh">node tools/build.mjs
+</code></pre>
+<p>需要 Node.js。构建脚本直接导入本目录的组件，不需要 npm 安装，也不需要联网。公式编译错误会使构建失败，以便发现未闭合或错误的 LaTeX。</p>
+<p>迁移到其他机器后，使用该机器上的 <code>node</code> 即可；构建脚本不需要联网或安装 npm 依赖。</p>
+<h2 id="heading-3">替换源课件或增加周次时</h2>
+<p>在拥有本地源 PDF 时保留源文件并核实变更。更新 <code>tools/sources.py</code> 中的来源列表、每一页到笔记节的映射与章节名称，再运行：</p>
+<pre><code class="language-sh">python3 tools/sources.py --render
+</code></pre>
+<p>需要 Python 3，以及 <code>pypdf</code>、<code>pypdfium2</code>、<code>Pillow</code>。不重新导出图片时可省略 <code>--render</code>。这个脚本生成页索引与图片，<strong>不会自动替你阅读新课件并写中文笔记</strong>。</p>
+<p>每新增一章，还需更新 <code>tools/build.mjs</code> 的 <code>pages</code> 列表、学习入口与术语表，之后重建 HTML。章节模板提供内容结构。</p>
+<h2 id="heading-4">内容检查约定</h2>
+<p>每次检查源页与正文是否匹配，特别是例子数据、实验轴、参数、奖励范围、下标和附录。只写原课件实际展示的内容；扩展说明标明为补充。不要把初值、学习率、探索率或不同实验条件合并成一个设定。</p>
+<p>构建后检查页面中的公式、表格和图片，打开几道折叠答案，并检查窄窗口中的横向滚动。页面无需网络；保留整个目录即可移动到其他机器。</p>
+<h2 id="heading-5">修改日志</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>修改</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2026-09-15</td>
+<td>依据第 1 周 54 页、第 2 周 52 页课件，首次整理两章、完整附录、术语、自测和逐页索引；生成离线阅读版</td>
+</tr>
+</tbody></table></div>
+</article>
+<footer>依据用户提供的课件整理 · 原例与补充解释分开标记 · <a href="MAINTENANCE.md">Markdown 原稿</a> · <a href="index.html">返回入口</a></footer></main>
+</body></html>

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "prepared": "2026-09-15",
+  "sources": [
+    {
+      "week": 1,
+      "path": null,
+      "included_in_repository": false,
+      "pdf_pages": 54,
+      "sha256": "479609ab77fa9cb9ab7a81903969876f7aa023b340b90bbe1a6a3c5c035a75e9",
+      "page_numbering": "1–54"
+    },
+    {
+      "week": 2,
+      "path": null,
+      "included_in_repository": false,
+      "pdf_pages": 52,
+      "sha256": "09a607a2b9431d67b0112bf82cc1eefd3c581b89f65290ecfb7ad0fece82b9ab",
+      "page_numbering": "正文 1–47；PDF P48–52 的页脚为附录 1–5"
+    }
+  ]
+}

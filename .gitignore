@@ -1,0 +1,26 @@
+# macOS and editor noise
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Source material kept locally; generated page images are the public web assets.
+*.pdf
+
+# Python and Node generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+/dist/
+/build/
+.cache/
+
+# Local environments and credentials
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

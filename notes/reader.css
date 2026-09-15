@@ -1,0 +1,28 @@
+:root{color-scheme:light;--paper:#fffefa;--ink:#253333;--muted:#647371;--accent:#126c61;--line:#dce4df;--aside:#f3f6f2}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}a:hover{color:#034c42}
+.skip{position:absolute;left:-9999px}.skip:focus{left:20px;top:10px;z-index:10;background:white;padding:10px}
+.sidebar{position:fixed;inset:0 auto 0 0;width:260px;overflow:auto;background:var(--aside);border-right:1px solid var(--line);padding:32px 22px;font-size:14px}
+.brand{font-size:23px;font-weight:750;letter-spacing:.06em;color:#164a43;margin-bottom:24px}.brand span{display:block;font-size:13px;letter-spacing:.03em;font-weight:500;color:var(--muted);margin-top:4px}
+.sidebar nav{display:grid;gap:3px}.sidebar nav a{display:block;padding:5px 8px;text-decoration:none;border-left:2px solid transparent;line-height:1.6}
+.sidebar nav a[aria-current]{font-weight:700;border-color:var(--accent);background:#e7efea}.sidebar nav a:hover{background:#e7efea}
+.page-toc{border:0;border-top:1px solid var(--line);padding:15px 0 0;margin:22px 0 0;background:transparent}.page-toc summary{font-weight:600;color:var(--muted);font-size:13px}.page-toc nav{margin-top:8px;font-size:12px}
+.reader-tip{font-size:12px;color:var(--muted);margin-top:25px}
+main{max-width:1160px;margin-left:260px;padding:46px 64px 50px}.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--muted);margin-bottom:10px}
+h1{font-size:32px;line-height:1.45;letter-spacing:-.025em;margin:8px 0 22px;font-weight:750;color:#173f38}
+h2{font-size:25px;line-height:1.5;margin:52px 0 20px;padding-top:20px;border-top:1px solid var(--line);color:#174e43}
+h3{font-size:20px;line-height:1.5;margin:32px 0 14px;color:#244c43}h4{font-size:18px}
+p{margin:14px 0}strong{font-weight:700;color:#1d4039}li{padding-left:3px;margin:6px 0}ul,ol{padding-left:1.5em}
+blockquote{margin:22px 0;padding:1px 20px;border-left:3px solid #75a899;background:#f2f6ef;color:#384c43;font-size:16px}
+.table-scroll{overflow-x:auto;margin:22px 0;border-top:2px solid #90aaa0;border-bottom:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.75}th{text-align:left;font-weight:650;background:#f0f4ee;color:#274c41}th,td{padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}td:first-child{min-width:90px}
+.equation{overflow-x:auto;overflow-y:hidden;padding:7px 0;margin:17px 0}.katex{font-size:1.08em}.katex-display{margin:.6em 0}.equation .katex-display>.katex{white-space:nowrap}
+img{display:block;max-width:100%;height:auto;margin:24px auto;border:1px solid #e4e6df;background:white}
+details{padding:12px 18px;margin:14px 0 28px;border:1px solid var(--line);background:#f8faf5}summary{cursor:pointer;color:var(--accent);font-size:15px;font-weight:600}details[open]>summary{margin-bottom:12px}
+code{font: .88em/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#eef2eb;border-radius:3px;padding:2px 5px}pre{padding:20px;background:#f0f3ed;overflow:auto;border-left:3px solid #a5baab;font-size:14px;line-height:1.8}pre code{padding:0;background:none}
+footer{margin-top:55px;border-top:1px solid var(--line);padding-top:20px;font-size:12px;color:var(--muted)}
+@media(min-width:1550px){main{margin-left:max(260px,calc((100vw - 1000px)/2));max-width:1000px}.sidebar{width:280px}}
+@media(max-width:1000px){main{padding:35px 30px}.sidebar{width:230px}main{margin-left:230px}}
+@media(max-width:760px){body{font-size:16px}.sidebar{position:static;width:auto;border-right:0;border-bottom:1px solid var(--line);padding:20px}.brand{margin-bottom:12px}.sidebar>nav{grid-template-columns:1fr 1fr}.page-toc,.reader-tip{display:none}main{margin:0;padding:26px 18px;max-width:none}h1{font-size:27px}h2{font-size:23px}h3{font-size:19px}table{font-size:14px}th,td{padding:9px}.katex{font-size:1em}}
+@media print{.sidebar,.eyebrow,.skip,footer{display:none}main{margin:0;padding:0;max-width:none}body{font-size:11pt;background:white}h1{font-size:22pt}h2{font-size:17pt;break-after:avoid}h3{font-size:14pt;break-after:avoid}a{color:inherit;text-decoration:none}img{max-height:75vh;object-fit:contain}table{font-size:10pt}blockquote,table,pre{break-inside:avoid}.table-scroll,.equation{overflow:visible}details{break-inside:avoid}}
