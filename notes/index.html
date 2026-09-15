@@ -13,120 +13,39 @@
 <a  href="glossary.html">术语与符号</a>
 <a  href="coverage.html">逐页对应表</a>
 <a  href="source-pages.html">原页图库</a></nav>
-<details class="page-toc" open><summary>本页目录</summary><nav aria-label="本页目录"><a href="#heading-1">阅读目录</a>
-<a href="#heading-2">怎样用它高效自学</a>
-<a href="#heading-3">格式与标记</a>
-<a href="#heading-4">学习进度</a>
-<a href="#heading-5">后续维护</a></nav></details>
+<details class="page-toc" open><summary>本页目录</summary><nav aria-label="本页目录"><a href="#heading-1">开始学习</a>
+<a href="#heading-2">查阅资料</a>
+<a href="#heading-3">使用与维护</a></nav></details>
 <p class="reader-tip">查找内容：⌘F / Ctrl+F<br>公式可直接阅读，图片可放大查看。</p></aside>
 <main id="content"><div class="eyebrow">课程笔记 / 2026 秋季</div><article><h1>CSC6129 强化学习：中文自学笔记</h1>
-<p>这套笔记把每周课件整理为可以独立阅读的中文章节，保留原课件的知识点、公式、数值例子、实验图和参考文献，并补充推导、易错提醒与自测答案。</p>
-<p><strong>开始阅读：<a href="week01.html">第 1 周：强化学习导论</a>。</strong> 复习第二周时，可以直接进入<a href="week02.html">多臂老虎机</a>。</p>
-<h2 id="heading-1">阅读目录</h2>
+<p>按周学习，保留课件知识点、公式和例子，补充难点解释与自测。</p>
+<h2 id="heading-1">开始学习</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>材料</th>
+<th>章节</th>
 <th>内容</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><a href="week01.html">第 1 周</a></td>
-<td>RL 基本概念、LLM 预览、机器人与井字棋例子、课程安排</td>
+<td><a href="week01.html">第 1 周：强化学习导论</a></td>
+<td>基本概念、LLM 预览、机器人与井字棋</td>
 </tr>
 <tr>
-<td><a href="week02.html">第 2 周</a></td>
-<td>动作价值、探索、增量估计、UCB、遗憾、梯度与上下文 Bandit</td>
+<td><a href="week02.html">第 2 周：多臂老虎机</a></td>
+<td>探索、价值估计、UCB、遗憾与梯度方法</td>
 </tr>
 <tr>
 <td><a href="week02-appendix.html">第 2 周附录</a></td>
-<td>UCB1 全部证明、Softmax 完整求导</td>
-</tr>
-<tr>
-<td><a href="glossary.html">术语与符号</a></td>
-<td>中英对应、两周记号差异、常见混淆</td>
-</tr>
-<tr>
-<td><a href="coverage.html">原课件逐页对应表</a></td>
-<td>106 页逐页定位到笔记章节与原页图片</td>
-</tr>
-<tr>
-<td><a href="source-pages.html">原页图库</a></td>
-<td>每页原始版面，按周保留，供查图和核对</td>
-</tr>
-<tr>
-<td><a href="chapter-template.html">后续章节模板</a></td>
-<td>以后新增周次时沿用的结构</td>
+<td>UCB1 证明与 Softmax 求导</td>
 </tr>
 </tbody></table></div>
-<p>目前提供的材料只有第 1 周和第 2 周；课件中列出的第 3–14 周是教学计划，还没有对应源文件，因此没有编写其课程笔记。</p>
-<h2 id="heading-2">怎样用它高效自学</h2>
-<ol>
-<li><strong>第一次学习：</strong> 先读章首目标和正文，每个公式都先读懂符号与假设，再亲手重算“原例”。LLM 预览无需本周掌握全部算法细节。</li>
-<li><strong>当次学完：</strong> 不看笔记回答章节自测，答完再展开答案。在章末记录卡住的概念与错因。</li>
-<li><strong>隔天复习：</strong> 先看自己记录的问题，重新计算做错的例子，再对照公式回忆卡。</li>
-<li><strong>一周后：</strong> 尝试不用原文，用送货机器人、井字棋和两臂 Bandit 讲清主要概念。讲不通的地方再回对应节。</li>
-</ol>
-<p>以上是建议使用方式，不是课程要求。学习是否扎实，以能解释、能计算、能说出适用条件为准。</p>
-<h2 id="heading-3">格式与标记</h2>
-<p><strong>Markdown 是可维护的原稿</strong>：一周一文件，公式采用 LaTeX，图片与引用采用相对路径。移动文件夹时，请保留整个 <code>notes</code> 目录的结构。可在支持 Markdown 数学公式的阅读器中阅读，例如已有的 Obsidian 或 Typora；也可以通过 GitHub Pages 在线阅读。原始课件 PDF 只保留在本地，网页所需的原页图片已包含在 <code>assets</code> 目录中。</p>
-<p>同目录的 <code>index.html</code> 是便于直接打开的离线阅读入口，包含目录导航和已排版公式。HTML 由 Markdown 生成，<strong>日后修改 Markdown，再重新生成阅读版</strong>，避免维护两份内容。</p>
-<ul>
-<li><strong>来源 Pn：</strong> 对应原 PDF 的实际页面序号。</li>
-<li><strong>原例 / 原实验：</strong> 保留课件给定的设定、数值和条件。</li>
-<li><strong>补充解释 / 补充推导 / 自测：</strong> 为帮助学习添加，不能当作教师原话或考试范围说明。</li>
-<li><strong>课件参考文献：</strong> 保留书目信息，未将未读的整篇论文内容扩充为授课知识。</li>
-<li><strong>原图：</strong> 来自用户提供的课件，正文有中文读图说明，图库保留全部页面。</li>
-</ul>
-<p>第 2 周 PDF 正文页脚是 1/47–47/47，附录另起 1/5–5/5。这里统一使用实际 PDF 页码 1–52，以免“第 1 页”指代两处。第 1 周文件为 54 页，共计 106 页。</p>
-<p>连续的目录页、封面和章节分隔页在正文合并处理，但在逐页对应表中各有记录。图中被裁剪、实际不可见的隐藏 PDF 文字不当作课件内容扩写。</p>
-<h2 id="heading-4">学习进度</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>任务</th>
-<th>已完成</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>第 1 周正文与原例</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>第 1 周自测并订正</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>第 2 周第 1–4 节</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>第 2 周 UCB 与遗憾</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>第 2 周梯度与上下文 Bandit</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>第 2 周自测并订正</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>Softmax 附录推导</td>
-<td>☐</td>
-</tr>
-<tr>
-<td>UCB1 证明，选读</td>
-<td>☐</td>
-</tr>
-</tbody></table></div>
-<p>这是一份可编辑清单，勾选记录请写回 Markdown。离线阅读页本身不保存学习进度。</p>
-<h2 id="heading-5">后续维护</h2>
-<p>每新增一周，复制章节模板为 <code>week03.md</code> 等文件，填入源文件与页数，按“概念、公式、原例、补充说明、自测”的顺序整理。保留原课件文件；新图片使用 <code>assets/week03/page-01.jpg</code> 一类稳定名称。更新入口、术语表、逐页对应表和来源清单。</p>
-<p>原材料修订时，先检查对应页，更新其正文和图片，再重新生成离线阅读版。不要仅替换 PDF，却继续保留旧例子的数字。当前来源的文件名、页数与 SHA-256 指纹记录在 <code>sources.json</code>，便于识别版本变化。</p>
-<p>构建与检查方法见 <a href="MAINTENANCE.html">维护说明</a>。这份说明只供以后维护，日常学习不需要阅读。</p>
-<p>版本：2026-09-15，基于当前两份课件整理。</p>
+<p>先读正文并重算原例，再完成章末自测，最后展开答案检查。UCB1 完整证明按课件标为选读、不考期末。</p>
+<h2 id="heading-2">查阅资料</h2>
+<p><a href="glossary.html">术语与符号</a> · <a href="coverage.html">逐页对应表</a> · <a href="source-pages.html">原页图库</a></p>
+<p>目前包含第 1、2 周，共 106 页课件。“原例”来自课件，“补充解释”和自测是额外学习材料；来源页码使用 PDF 实际页码。</p>
+<h2 id="heading-3">使用与维护</h2>
+<p>在线阅读或下载后用浏览器打开 <code>notes/index.html</code>。修改 Markdown 原稿后重新生成网页即可，详见<a href="MAINTENANCE.html">维护说明</a>。添加新周次可使用<a href="chapter-template.html">章节模板</a>。</p>
 </article>
 <footer>依据用户提供的课件整理 · 原例与补充解释分开标记 · <a href="README.md">Markdown 原稿</a> · <a href="index.html">返回入口</a></footer></main>
 </body></html>
