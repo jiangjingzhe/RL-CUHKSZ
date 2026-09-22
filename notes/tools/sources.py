@@ -20,6 +20,14 @@ SECTIONS = {
         7: 'LLM、Bandit 与后续课程', 8: '课程安排与考核',
         9: '复习与自测', 10: '课件参考文献',
     },
+    3: {
+        1: '从 Bandit 到 MDP', 2: '回收机器人的转移模型',
+        3: '奖励、回报与终止状态', 4: '策略、价值与贝尔曼期望方程',
+        5: '随机策略下的网格与机器人', 6: '最优价值与贝尔曼最优方程',
+        7: '动态规划与迭代策略评估', 8: '回合制网格的评估',
+        9: '策略改进与策略迭代', 10: '价值迭代',
+        11: '广义策略迭代与下周衔接', 12: '复习、自测与参考文献',
+    },
     2: {
         1: '问题、真实价值与估计值', 2: '贪心与 epsilon-greedy',
         3: '增量更新与非平稳奖励', 4: '乐观初始化', 5: 'UCB',
@@ -30,6 +38,19 @@ SECTIONS = {
 
 # Every physical PDF page must map to a substantive note section.
 MAP = {
+    3: {
+        **dict.fromkeys(range(1, 8), 1),
+        **dict.fromkeys(range(8, 11), 2),
+        **dict.fromkeys(range(11, 18), 3),
+        **dict.fromkeys(range(18, 25), 4),
+        25: 5, 26: 5,
+        **dict.fromkeys(range(27, 33), 6),
+        **dict.fromkeys(range(33, 37), 7),
+        37: 8, 38: 8,
+        **dict.fromkeys(range(39, 43), 9),
+        **dict.fromkeys(range(43, 46), 10),
+        **dict.fromkeys(range(46, 50), 11), 50: 12,
+    },
     1: {
         **dict.fromkeys(range(1, 3), 8), 3: 1,
         **dict.fromkeys(range(4, 12), 2),
@@ -63,8 +84,8 @@ def main():
                 '逐页列出实际 PDF 页面及其笔记位置。封面、重复目录与分隔页合并到对应章节；知识点、公式、例子与实验在正文重组说明。此表用于溯源，不将仅保留原图等同于中文讲解。', '']
     gallery = ['# 原课件全页图库', '', '[学习入口](README.md) · [逐页对应表](coverage.md)', '',
                '保留用户提供课件的原始页面。中文讲解见每页的“对应笔记”，可点击图片链接查看大图。', '']
-    manifest = {'version': 1, 'prepared': '2026-09-15', 'sources': []}
-    for week, filename in [(1, 'Week 1-Revised.pdf'), (2, 'Week 2.pdf')]:
+    manifest = {'version': 1, 'prepared': '2026-09-22', 'sources': []}
+    for week, filename in [(1, 'Week 1-Revised.pdf'), (2, 'Week 2.pdf'), (3, 'Week 3.pdf')]:
         path = ROOT / filename
         pdf = PdfReader(path)
         count = len(pdf.pages)
@@ -75,9 +96,10 @@ def main():
             import pypdfium2
             rendered = pypdfium2.PdfDocument(path)
         manifest['sources'].append({
-            'week': week, 'path': '../'+filename, 'pdf_pages': count,
+            'week': week, 'path': None, 'included_in_repository': False,
+            'pdf_pages': count,
             'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
-            'page_numbering': '1–54' if week == 1 else '正文 1–47；PDF P48–52 的页脚为附录 1–5',
+            'page_numbering': '正文 1–47；PDF P48–52 的页脚为附录 1–5' if week == 2 else f'1–{count}',
         })
         coverage.extend([f'<a id="week{week:02}"></a>', f'## 第 {week} 周：{count} 页', '',
                          '| PDF 页 | 原页主题 | 中文笔记位置 | 原始版面 |',
@@ -111,7 +133,7 @@ def main():
     (NOTES / 'coverage.md').write_text('\n'.join(coverage), encoding='utf-8')
     (NOTES / 'source-pages.md').write_text('\n'.join(gallery), encoding='utf-8')
     (NOTES / 'sources.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-    print('Source index generated: 54 + 52 = 106 pages.')
+    print(f"Source index generated: {sum(s['pdf_pages'] for s in manifest['sources'])} pages.")
 
 if __name__ == '__main__':
     main()

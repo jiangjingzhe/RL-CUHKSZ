@@ -9,6 +9,7 @@
 <nav aria-label="章节导航"><a  href="index.html">学习入口</a>
 <a  href="week01.html">第 1 周 · 强化学习导论</a>
 <a  href="week02.html">第 2 周 · 多臂老虎机</a>
+<a  href="week03.html">第 3 周 · MDP 与动态规划</a>
 <a  href="week02-appendix.html">第 2 周 · 附录证明</a>
 <a aria-current="page" href="glossary.html">术语与符号</a>
 <a  href="coverage.html">逐页对应表</a>
@@ -17,10 +18,11 @@
 <a href="#heading-2">2. Bandit 与优化</a>
 <a href="#heading-3">3. LLM 预览缩写</a>
 <a href="#heading-4">4. 数学记号</a>
-<a href="#heading-5">5. 三组高频混淆</a></nav></details>
+<a href="#heading-5">5. 三组高频混淆</a>
+<a href="#heading-6">6. MDP 与动态规划</a></nav></details>
 <p class="reader-tip">查找内容：⌘F / Ctrl+F<br>公式可直接阅读，图片可放大查看。</p></aside>
 <main id="content"><div class="eyebrow">课程笔记 / 2026 秋季</div><article><h1>术语与符号速查</h1>
-<p><a href="index.html">学习入口</a> · <a href="week01.html">第 1 周</a> · <a href="week02.html">第 2 周</a></p>
+<p><a href="index.html">学习入口</a> · <a href="week01.html">第 1 周</a> · <a href="week02.html">第 2 周</a> · <a href="week03.html">第 3 周</a></p>
 <h2 id="heading-1">1. 基础术语</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -346,7 +348,7 @@
 <tr>
 <td>MDP</td>
 <td>Markov decision process</td>
-<td>马尔可夫决策过程，第 3 周展开</td>
+<td>马尔可夫决策过程，见 <a href="week03.html#w3-1">W3 §1</a></td>
 </tr>
 </tbody></table></div>
 <h2 id="heading-4">4. 数学记号</h2>
@@ -386,7 +388,7 @@
 <tr>
 <td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo separator="true">,</mo><mi mathvariant="bold">w</mi></mrow><annotation encoding="application/x-tex">\theta,\mathbf w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbf" style="margin-right:0.01597em;">w</span></span></span></span></td>
 <td>参数向量</td>
-<td>如策略、价值近似器参数</td>
+<td>如策略、价值近似器参数；第 3 周 DP 算法的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span> 特指停止阈值</td>
 </tr>
 <tr>
 <td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>π</mi></msub><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><msub><mi>q</mi><mi>π</mi></msub><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">v_\pi(s),q_\pi(s,a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span></td>
@@ -440,8 +442,8 @@
 </tr>
 <tr>
 <td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span></td>
-<td>步长</td>
-<td>决定对新证据的反应幅度</td>
+<td>第 2 周为步长；第 3 周机器人中为转移概率</td>
+<td>根据当前例子的定义区分</td>
 </tr>
 <tr>
 <td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span></td>
@@ -508,6 +510,131 @@
 <p><strong>奖励、回报、价值：</strong> 奖励是一次反馈，回报是之后奖励的总和，价值是给定状态或动作、指定后续策略时回报的期望。</p>
 <p><strong>估计值、探索率、步长：</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span> 是目前相信的奖励水平，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ϵ</span></span></span></span> 决定多常随机尝试，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span> 决定新证据改变旧估计的幅度。</p>
 <p><strong>Bandit 与一般序列决策：</strong> Bandit 中动作不改变未来决策状态，所以动作价值是该动作的即时奖励均值；MDP 中动作还改变未来状态，价值必须考虑后续回报。</p>
+<h2 id="heading-6">6. MDP 与动态规划</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文 / 记号</th>
+<th>含义</th>
+<th>详细解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>马尔可夫性质</td>
+<td>Markov property</td>
+<td>给定当前状态和动作后，早期历史不再提供预测下一后果的额外信息</td>
+<td><a href="week03.html#w3-1">W3 §1</a></td>
+</tr>
+<tr>
+<td>联合转移模型</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><msup><mi>s</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo separator="true">,</mo><mi>r</mi><mo>∣</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(s&#x27;,r\mid s,a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span></td>
+<td>下一状态与奖励的联合条件分布</td>
+<td><a href="week03.html#w3-1">W3 §1</a></td>
+</tr>
+<tr>
+<td>转移概率</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><msup><mi>s</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>∣</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(s&#x27;\mid s,a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span></td>
+<td>对奖励求和后的后继状态概率</td>
+<td><a href="week03.html#w3-2">W3 §2</a></td>
+</tr>
+<tr>
+<td>期望奖励</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">r(s,a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span> / <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo separator="true">,</mo><msup><mi>s</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">r(s,a,s&#x27;)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></td>
+<td>给定状态动作 / 进一步给定后继状态的平均奖励</td>
+<td><a href="week03.html#w3-2">W3 §2</a></td>
+</tr>
+<tr>
+<td>吸收状态</td>
+<td>Absorbing state</td>
+<td>只转移到自身；本章用零后续奖励的吸收状态表示终止</td>
+<td><a href="week03.html#w3-3">W3 §3</a></td>
+</tr>
+<tr>
+<td>平稳策略</td>
+<td>Stationary policy</td>
+<td>行动规则不显式随时间改变，仍可随机选择动作</td>
+<td><a href="week03.html#w3-4">W3 §4</a></td>
+</tr>
+<tr>
+<td>贝尔曼期望方程</td>
+<td>Bellman expectation equation</td>
+<td>给定策略的当前价值等于即时奖励加折扣后继价值的期望</td>
+<td><a href="week03.html#w3-4">W3 §4</a></td>
+</tr>
+<tr>
+<td>最优价值</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mo>∗</mo></msub><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><msub><mi>q</mi><mo>∗</mo></msub><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">v_*(s),q_*(s,a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1757em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1757em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span></td>
+<td>对后续策略最大化后的期望回报；区别于 Bandit 的即时均值</td>
+<td><a href="week03.html#w3-6">W3 §6</a></td>
+</tr>
+<tr>
+<td>贝尔曼最优方程</td>
+<td>Bellman optimality equation</td>
+<td>对动作取最大值，对环境后果仍求期望</td>
+<td><a href="week03.html#w3-6">W3 §6</a></td>
+</tr>
+<tr>
+<td>动态规划</td>
+<td>Dynamic programming，DP</td>
+<td>利用已知环境模型进行价值计算和策略优化</td>
+<td><a href="week03.html#w3-7">W3 §7</a></td>
+</tr>
+<tr>
+<td>预测 / 控制</td>
+<td>Prediction / Control</td>
+<td>评估给定策略 / 寻找最优策略</td>
+<td><a href="week03.html#w3-7">W3 §7</a></td>
+</tr>
+<tr>
+<td>扫描</td>
+<td>Sweep</td>
+<td>每个非终止状态更新一次</td>
+<td><a href="week03.html#w3-7">W3 §7</a></td>
+</tr>
+<tr>
+<td>同步 / 原地更新</td>
+<td>Synchronous / In-place</td>
+<td>整轮读旧值 / 更新后立即可用</td>
+<td><a href="week03.html#w3-7">W3 §7</a></td>
+</tr>
+<tr>
+<td>策略评估</td>
+<td>Policy evaluation</td>
+<td>固定策略，计算或逼近其价值</td>
+<td><a href="week03.html#w3-7">W3 §7</a></td>
+</tr>
+<tr>
+<td>策略改进</td>
+<td>Policy improvement</td>
+<td>依据旧策略价值构造不更差的贪心策略</td>
+<td><a href="week03.html#w3-9">W3 §9</a></td>
+</tr>
+<tr>
+<td>策略迭代</td>
+<td>Policy iteration</td>
+<td>交替执行策略评估与策略改进</td>
+<td><a href="week03.html#w3-9">W3 §9</a></td>
+</tr>
+<tr>
+<td>价值迭代</td>
+<td>Value iteration</td>
+<td>用含动作最大化的备份更新价值，最终提取策略</td>
+<td><a href="week03.html#w3-10">W3 §10</a></td>
+</tr>
+<tr>
+<td>广义策略迭代</td>
+<td>Generalized policy iteration，GPI</td>
+<td>评估与改进以不同粒度相互作用</td>
+<td><a href="week03.html#w3-11">W3 §11</a></td>
+</tr>
+<tr>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo separator="true">,</mo><mi>θ</mi></mrow><annotation encoding="application/x-tex">\Delta,\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">Δ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span></td>
+<td>本轮最大变化、停止阈值</td>
+<td>本章 DP 中使用；不同于 Bandit 次优差距 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">\Delta_a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">Δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></td>
+<td><a href="week03.html#w3-7">W3 §7</a></td>
+</tr>
+</tbody></table></div>
 </article>
 <footer>依据用户提供的课件整理 · 原例与补充解释分开标记 · <a href="glossary.md">Markdown 原稿</a> · <a href="index.html">返回入口</a></footer></main>
 </body></html>

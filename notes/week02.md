@@ -2,7 +2,7 @@
 
 > 来源：`Week 2.pdf`，共 52 个 PDF 页面：47 页正文与 5 页附录。CSC6129，2026 秋季，Zhongxiang DAI。本文页码指 PDF 实际页码；附录 A.1–A.4 在 P48–51，附录 B 在 P52。
 
-[返回学习入口](README.md) · [第 1 周](week01.md) · [术语与符号](glossary.md) · [逐页对应表](coverage.md#week02) · [完整附录证明](week02-appendix.md)
+[返回学习入口](README.md) · [第 1 周](week01.md) · [第 3 周](week03.md) · [术语与符号](glossary.md) · [逐页对应表](coverage.md#week02) · [完整附录证明](week02-appendix.md)
 
 ## 本章怎样学
 

@@ -10,6 +10,7 @@ const pages = [
   ['README.md', 'index.html', '学习入口'],
   ['week01.md', 'week01.html', '第 1 周 · 强化学习导论'],
   ['week02.md', 'week02.html', '第 2 周 · 多臂老虎机'],
+  ['week03.md', 'week03.html', '第 3 周 · MDP 与动态规划'],
   ['week02-appendix.md', 'week02-appendix.html', '第 2 周 · 附录证明'],
   ['glossary.md', 'glossary.html', '术语与符号'],
   ['coverage.md', 'coverage.html', '逐页对应表'],
@@ -62,7 +63,7 @@ for (const [input, output, label] of pages) {
   body = body.replace(/<img /g, '<img loading="lazy" decoding="async" ');
   body = body.replace(/<img\b[^>]*src="([^"]+)"[^>]*>/g, (tag, src) =>
     `<a class="figure-link" href="${src}" target="_blank" rel="noopener" title="打开原课件大图">${tag}</a>`);
-  const nav = pages.slice(0, 7).map(([, href, text]) =>
+  const nav = pages.filter(([input]) => !['chapter-template.md', 'MAINTENANCE.md'].includes(input)).map(([, href, text]) =>
     `<a ${href === output ? 'aria-current="page"' : ''} href="${href}">${text}</a>`).join('\n');
   const html = `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">

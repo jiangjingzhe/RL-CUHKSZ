@@ -749,3 +749,355 @@
 [对应笔记](week02-appendix.md#softmax-proof) · [查看大图](assets/week02/page-52.jpg)
 
 ![第 2 周原课件 P52：Appendix B: The Softmax Gradient](assets/week02/page-52.jpg)
+
+## 第 3 周
+
+<a id="w3-p1"></a>
+### 第 3 周 · P1 · CSC6129 Reinforcement Learning
+
+[对应笔记](week03.md#w3-1) · [查看大图](assets/week03/page-01.jpg)
+
+![第 3 周原课件 P1：CSC6129 Reinforcement Learning](assets/week03/page-01.jpg)
+
+<a id="w3-p2"></a>
+### 第 3 周 · P2 · Today’s Lecture
+
+[对应笔记](week03.md#w3-1) · [查看大图](assets/week03/page-02.jpg)
+
+![第 3 周原课件 P2：Today’s Lecture](assets/week03/page-02.jpg)
+
+<a id="w3-p3"></a>
+### 第 3 周 · P3 · Lecture Outline
+
+[对应笔记](week03.md#w3-1) · [查看大图](assets/week03/page-03.jpg)
+
+![第 3 周原课件 P3：Lecture Outline](assets/week03/page-03.jpg)
+
+<a id="w3-p4"></a>
+### 第 3 周 · P4 · Decisions That Change Future States
+
+[对应笔记](week03.md#w3-1) · [查看大图](assets/week03/page-04.jpg)
+
+![第 3 周原课件 P4：Decisions That Change Future States](assets/week03/page-04.jpg)
+
+<a id="w3-p5"></a>
+### 第 3 周 · P5 · The Agent–Environment Interface
+
+[对应笔记](week03.md#w3-1) · [查看大图](assets/week03/page-05.jpg)
+
+![第 3 周原课件 P5：The Agent–Environment Interface](assets/week03/page-05.jpg)
+
+<a id="w3-p6"></a>
+### 第 3 周 · P6 · Finite Markov Decision Processes
+
+[对应笔记](week03.md#w3-1) · [查看大图](assets/week03/page-06.jpg)
+
+![第 3 周原课件 P6：Finite Markov Decision Processes](assets/week03/page-06.jpg)
+
+<a id="w3-p7"></a>
+### 第 3 周 · P7 · The Markov Property
+
+[对应笔记](week03.md#w3-1) · [查看大图](assets/week03/page-07.jpg)
+
+![第 3 周原课件 P7：The Markov Property](assets/week03/page-07.jpg)
+
+<a id="w3-p8"></a>
+### 第 3 周 · P8 · The Recycling Robot
+
+[对应笔记](week03.md#w3-2) · [查看大图](assets/week03/page-08.jpg)
+
+![第 3 周原课件 P8：The Recycling Robot](assets/week03/page-08.jpg)
+
+<a id="w3-p9"></a>
+### 第 3 周 · P9 · The Robot Transition Model
+
+[对应笔记](week03.md#w3-2) · [查看大图](assets/week03/page-09.jpg)
+
+![第 3 周原课件 P9：The Robot Transition Model](assets/week03/page-09.jpg)
+
+<a id="w3-p10"></a>
+### 第 3 周 · P10 · Transition Probabilities and Expected Rewards
+
+[对应笔记](week03.md#w3-2) · [查看大图](assets/week03/page-10.jpg)
+
+![第 3 周原课件 P10：Transition Probabilities and Expected Rewards](assets/week03/page-10.jpg)
+
+<a id="w3-p11"></a>
+### 第 3 周 · P11 · Lecture Outline
+
+[对应笔记](week03.md#w3-3) · [查看大图](assets/week03/page-11.jpg)
+
+![第 3 周原课件 P11：Lecture Outline](assets/week03/page-11.jpg)
+
+<a id="w3-p12"></a>
+### 第 3 周 · P12 · Goals and Rewards
+
+[对应笔记](week03.md#w3-3) · [查看大图](assets/week03/page-12.jpg)
+
+![第 3 周原课件 P12：Goals and Rewards](assets/week03/page-12.jpg)
+
+<a id="w3-p13"></a>
+### 第 3 周 · P13 · Episodic Tasks and Returns
+
+[对应笔记](week03.md#w3-3) · [查看大图](assets/week03/page-13.jpg)
+
+![第 3 周原课件 P13：Episodic Tasks and Returns](assets/week03/page-13.jpg)
+
+<a id="w3-p14"></a>
+### 第 3 周 · P14 · Continuing Tasks and Discounting
+
+[对应笔记](week03.md#w3-3) · [查看大图](assets/week03/page-14.jpg)
+
+![第 3 周原课件 P14：Continuing Tasks and Discounting](assets/week03/page-14.jpg)
+
+<a id="w3-p15"></a>
+### 第 3 周 · P15 · Deriving the Return Recursion
+
+[对应笔记](week03.md#w3-3) · [查看大图](assets/week03/page-15.jpg)
+
+![第 3 周原课件 P15：Deriving the Return Recursion](assets/week03/page-15.jpg)
+
+<a id="w3-p16"></a>
+### 第 3 周 · P16 · Computing Returns Backward
+
+[对应笔记](week03.md#w3-3) · [查看大图](assets/week03/page-16.jpg)
+
+![第 3 周原课件 P16：Computing Returns Backward](assets/week03/page-16.jpg)
+
+<a id="w3-p17"></a>
+### 第 3 周 · P17 · Terminal States and Uniﬁed Notation
+
+[对应笔记](week03.md#w3-3) · [查看大图](assets/week03/page-17.jpg)
+
+![第 3 周原课件 P17：Terminal States and Uniﬁed Notation](assets/week03/page-17.jpg)
+
+<a id="w3-p18"></a>
+### 第 3 周 · P18 · Lecture Outline
+
+[对应笔记](week03.md#w3-4) · [查看大图](assets/week03/page-18.jpg)
+
+![第 3 周原课件 P18：Lecture Outline](assets/week03/page-18.jpg)
+
+<a id="w3-p19"></a>
+### 第 3 周 · P19 · Policies
+
+[对应笔记](week03.md#w3-4) · [查看大图](assets/week03/page-19.jpg)
+
+![第 3 周原课件 P19：Policies](assets/week03/page-19.jpg)
+
+<a id="w3-p20"></a>
+### 第 3 周 · P20 · State Values and Action Values
+
+[对应笔记](week03.md#w3-4) · [查看大图](assets/week03/page-20.jpg)
+
+![第 3 周原课件 P20：State Values and Action Values](assets/week03/page-20.jpg)
+
+<a id="w3-p21"></a>
+### 第 3 周 · P21 · Connecting State Values and Action Values
+
+[对应笔记](week03.md#w3-4) · [查看大图](assets/week03/page-21.jpg)
+
+![第 3 周原课件 P21：Connecting State Values and Action Values](assets/week03/page-21.jpg)
+
+<a id="w3-p22"></a>
+### 第 3 周 · P22 · Deriving the Bellman Expectation Equation
+
+[对应笔记](week03.md#w3-4) · [查看大图](assets/week03/page-22.jpg)
+
+![第 3 周原课件 P22：Deriving the Bellman Expectation Equation](assets/week03/page-22.jpg)
+
+<a id="w3-p23"></a>
+### 第 3 周 · P23 · Reading a Bellman Backup
+
+[对应笔记](week03.md#w3-4) · [查看大图](assets/week03/page-23.jpg)
+
+![第 3 周原课件 P23：Reading a Bellman Backup](assets/week03/page-23.jpg)
+
+<a id="w3-p24"></a>
+### 第 3 周 · P24 · The Bellman Equation for Action Values
+
+[对应笔记](week03.md#w3-4) · [查看大图](assets/week03/page-24.jpg)
+
+![第 3 周原课件 P24：The Bellman Equation for Action Values](assets/week03/page-24.jpg)
+
+<a id="w3-p25"></a>
+### 第 3 周 · P25 · Gridworld Under a Random Policy
+
+[对应笔记](week03.md#w3-5) · [查看大图](assets/week03/page-25.jpg)
+
+![第 3 周原课件 P25：Gridworld Under a Random Policy](assets/week03/page-25.jpg)
+
+<a id="w3-p26"></a>
+### 第 3 周 · P26 · Evaluating a Robot Policy
+
+[对应笔记](week03.md#w3-5) · [查看大图](assets/week03/page-26.jpg)
+
+![第 3 周原课件 P26：Evaluating a Robot Policy](assets/week03/page-26.jpg)
+
+<a id="w3-p27"></a>
+### 第 3 周 · P27 · Lecture Outline
+
+[对应笔记](week03.md#w3-6) · [查看大图](assets/week03/page-27.jpg)
+
+![第 3 周原课件 P27：Lecture Outline](assets/week03/page-27.jpg)
+
+<a id="w3-p28"></a>
+### 第 3 周 · P28 · Optimal Policies and Value Functions
+
+[对应笔记](week03.md#w3-6) · [查看大图](assets/week03/page-28.jpg)
+
+![第 3 周原课件 P28：Optimal Policies and Value Functions](assets/week03/page-28.jpg)
+
+<a id="w3-p29"></a>
+### 第 3 周 · P29 · Deriving the Bellman Optimality Equation
+
+[对应笔记](week03.md#w3-6) · [查看大图](assets/week03/page-29.jpg)
+
+![第 3 周原课件 P29：Deriving the Bellman Optimality Equation](assets/week03/page-29.jpg)
+
+<a id="w3-p30"></a>
+### 第 3 周 · P30 · Optimal Action Values and Backups
+
+[对应笔记](week03.md#w3-6) · [查看大图](assets/week03/page-30.jpg)
+
+![第 3 周原课件 P30：Optimal Action Values and Backups](assets/week03/page-30.jpg)
+
+<a id="w3-p31"></a>
+### 第 3 周 · P31 · Choosing Actions from Optimal Values
+
+[对应笔记](week03.md#w3-6) · [查看大图](assets/week03/page-31.jpg)
+
+![第 3 周原课件 P31：Choosing Actions from Optimal Values](assets/week03/page-31.jpg)
+
+<a id="w3-p32"></a>
+### 第 3 周 · P32 · The Optimal Gridworld Policy
+
+[对应笔记](week03.md#w3-6) · [查看大图](assets/week03/page-32.jpg)
+
+![第 3 周原课件 P32：The Optimal Gridworld Policy](assets/week03/page-32.jpg)
+
+<a id="w3-p33"></a>
+### 第 3 周 · P33 · Lecture Outline
+
+[对应笔记](week03.md#w3-7) · [查看大图](assets/week03/page-33.jpg)
+
+![第 3 周原课件 P33：Lecture Outline](assets/week03/page-33.jpg)
+
+<a id="w3-p34"></a>
+### 第 3 周 · P34 · Dynamic Programming with a Known Model
+
+[对应笔记](week03.md#w3-7) · [查看大图](assets/week03/page-34.jpg)
+
+![第 3 周原课件 P34：Dynamic Programming with a Known Model](assets/week03/page-34.jpg)
+
+<a id="w3-p35"></a>
+### 第 3 周 · P35 · Iterative Policy Evaluation
+
+[对应笔记](week03.md#w3-7) · [查看大图](assets/week03/page-35.jpg)
+
+![第 3 周原课件 P35：Iterative Policy Evaluation](assets/week03/page-35.jpg)
+
+<a id="w3-p36"></a>
+### 第 3 周 · P36 · A Policy-Evaluation Algorithm
+
+[对应笔记](week03.md#w3-7) · [查看大图](assets/week03/page-36.jpg)
+
+![第 3 周原课件 P36：A Policy-Evaluation Algorithm](assets/week03/page-36.jpg)
+
+<a id="w3-p37"></a>
+### 第 3 周 · P37 · An Episodic Gridworld
+
+[对应笔记](week03.md#w3-8) · [查看大图](assets/week03/page-37.jpg)
+
+![第 3 周原课件 P37：An Episodic Gridworld](assets/week03/page-37.jpg)
+
+<a id="w3-p38"></a>
+### 第 3 周 · P38 · The First Policy-Evaluation Sweeps
+
+[对应笔记](week03.md#w3-8) · [查看大图](assets/week03/page-38.jpg)
+
+![第 3 周原课件 P38：The First Policy-Evaluation Sweeps](assets/week03/page-38.jpg)
+
+<a id="w3-p39"></a>
+### 第 3 周 · P39 · Policy Improvement
+
+[对应笔记](week03.md#w3-9) · [查看大图](assets/week03/page-39.jpg)
+
+![第 3 周原课件 P39：Policy Improvement](assets/week03/page-39.jpg)
+
+<a id="w3-p40"></a>
+### 第 3 周 · P40 · Policy Iteration
+
+[对应笔记](week03.md#w3-9) · [查看大图](assets/week03/page-40.jpg)
+
+![第 3 周原课件 P40：Policy Iteration](assets/week03/page-40.jpg)
+
+<a id="w3-p41"></a>
+### 第 3 周 · P41 · Policy Iteration for the Robot
+
+[对应笔记](week03.md#w3-9) · [查看大图](assets/week03/page-41.jpg)
+
+![第 3 周原课件 P41：Policy Iteration for the Robot](assets/week03/page-41.jpg)
+
+<a id="w3-p42"></a>
+### 第 3 周 · P42 · The Improved Robot Policy
+
+[对应笔记](week03.md#w3-9) · [查看大图](assets/week03/page-42.jpg)
+
+![第 3 周原课件 P42：The Improved Robot Policy](assets/week03/page-42.jpg)
+
+<a id="w3-p43"></a>
+### 第 3 周 · P43 · Deriving Value Iteration
+
+[对应笔记](week03.md#w3-10) · [查看大图](assets/week03/page-43.jpg)
+
+![第 3 周原课件 P43：Deriving Value Iteration](assets/week03/page-43.jpg)
+
+<a id="w3-p44"></a>
+### 第 3 周 · P44 · A Value-Iteration Algorithm
+
+[对应笔记](week03.md#w3-10) · [查看大图](assets/week03/page-44.jpg)
+
+![第 3 周原课件 P44：A Value-Iteration Algorithm](assets/week03/page-44.jpg)
+
+<a id="w3-p45"></a>
+### 第 3 周 · P45 · Value Iteration for the Robot
+
+[对应笔记](week03.md#w3-10) · [查看大图](assets/week03/page-45.jpg)
+
+![第 3 周原课件 P45：Value Iteration for the Robot](assets/week03/page-45.jpg)
+
+<a id="w3-p46"></a>
+### 第 3 周 · P46 · Generalized Policy Iteration
+
+[对应笔记](week03.md#w3-11) · [查看大图](assets/week03/page-46.jpg)
+
+![第 3 周原课件 P46：Generalized Policy Iteration](assets/week03/page-46.jpg)
+
+<a id="w3-p47"></a>
+### 第 3 周 · P47 · Comparing Dynamic Programming Methods
+
+[对应笔记](week03.md#w3-11) · [查看大图](assets/week03/page-47.jpg)
+
+![第 3 周原课件 P47：Comparing Dynamic Programming Methods](assets/week03/page-47.jpg)
+
+<a id="w3-p48"></a>
+### 第 3 周 · P48 · Lecture Summary
+
+[对应笔记](week03.md#w3-11) · [查看大图](assets/week03/page-48.jpg)
+
+![第 3 周原课件 P48：Lecture Summary](assets/week03/page-48.jpg)
+
+<a id="w3-p49"></a>
+### 第 3 周 · P49 · Next Week: Value-Based Methods
+
+[对应笔记](week03.md#w3-11) · [查看大图](assets/week03/page-49.jpg)
+
+![第 3 周原课件 P49：Next Week: Value-Based Methods](assets/week03/page-49.jpg)
+
+<a id="w3-p50"></a>
+### 第 3 周 · P50 · References
+
+[对应笔记](week03.md#w3-12) · [查看大图](assets/week03/page-50.jpg)
+
+![第 3 周原课件 P50：References](assets/week03/page-50.jpg)

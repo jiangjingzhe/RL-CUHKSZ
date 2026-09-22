@@ -121,3 +121,59 @@
 | 50 | Appendix A.3: A Sampling Threshold | [附录 A：UCB1 完整证明](week02-appendix.md#ucb-proof) | [P50](assets/week02/page-50.jpg) |
 | 51 | Appendix A.4: Expected Counts and Regret | [附录 A：UCB1 完整证明](week02-appendix.md#ucb-proof) | [P51](assets/week02/page-51.jpg) |
 | 52 | Appendix B: The Softmax Gradient | [附录 B：Softmax 求导](week02-appendix.md#softmax-proof) | [P52](assets/week02/page-52.jpg) |
+
+<a id="week03"></a>
+## 第 3 周：50 页
+
+| PDF 页 | 原页主题 | 中文笔记位置 | 原始版面 |
+| ---: | --- | --- | --- |
+| 1 | CSC6129 Reinforcement Learning | [§1 从 Bandit 到 MDP](week03.md#w3-1) | [P1](assets/week03/page-01.jpg) |
+| 2 | Today’s Lecture | [§1 从 Bandit 到 MDP](week03.md#w3-1) | [P2](assets/week03/page-02.jpg) |
+| 3 | Lecture Outline | [§1 从 Bandit 到 MDP](week03.md#w3-1) | [P3](assets/week03/page-03.jpg) |
+| 4 | Decisions That Change Future States | [§1 从 Bandit 到 MDP](week03.md#w3-1) | [P4](assets/week03/page-04.jpg) |
+| 5 | The Agent–Environment Interface | [§1 从 Bandit 到 MDP](week03.md#w3-1) | [P5](assets/week03/page-05.jpg) |
+| 6 | Finite Markov Decision Processes | [§1 从 Bandit 到 MDP](week03.md#w3-1) | [P6](assets/week03/page-06.jpg) |
+| 7 | The Markov Property | [§1 从 Bandit 到 MDP](week03.md#w3-1) | [P7](assets/week03/page-07.jpg) |
+| 8 | The Recycling Robot | [§2 回收机器人的转移模型](week03.md#w3-2) | [P8](assets/week03/page-08.jpg) |
+| 9 | The Robot Transition Model | [§2 回收机器人的转移模型](week03.md#w3-2) | [P9](assets/week03/page-09.jpg) |
+| 10 | Transition Probabilities and Expected Rewards | [§2 回收机器人的转移模型](week03.md#w3-2) | [P10](assets/week03/page-10.jpg) |
+| 11 | Lecture Outline | [§3 奖励、回报与终止状态](week03.md#w3-3) | [P11](assets/week03/page-11.jpg) |
+| 12 | Goals and Rewards | [§3 奖励、回报与终止状态](week03.md#w3-3) | [P12](assets/week03/page-12.jpg) |
+| 13 | Episodic Tasks and Returns | [§3 奖励、回报与终止状态](week03.md#w3-3) | [P13](assets/week03/page-13.jpg) |
+| 14 | Continuing Tasks and Discounting | [§3 奖励、回报与终止状态](week03.md#w3-3) | [P14](assets/week03/page-14.jpg) |
+| 15 | Deriving the Return Recursion | [§3 奖励、回报与终止状态](week03.md#w3-3) | [P15](assets/week03/page-15.jpg) |
+| 16 | Computing Returns Backward | [§3 奖励、回报与终止状态](week03.md#w3-3) | [P16](assets/week03/page-16.jpg) |
+| 17 | Terminal States and Uniﬁed Notation | [§3 奖励、回报与终止状态](week03.md#w3-3) | [P17](assets/week03/page-17.jpg) |
+| 18 | Lecture Outline | [§4 策略、价值与贝尔曼期望方程](week03.md#w3-4) | [P18](assets/week03/page-18.jpg) |
+| 19 | Policies | [§4 策略、价值与贝尔曼期望方程](week03.md#w3-4) | [P19](assets/week03/page-19.jpg) |
+| 20 | State Values and Action Values | [§4 策略、价值与贝尔曼期望方程](week03.md#w3-4) | [P20](assets/week03/page-20.jpg) |
+| 21 | Connecting State Values and Action Values | [§4 策略、价值与贝尔曼期望方程](week03.md#w3-4) | [P21](assets/week03/page-21.jpg) |
+| 22 | Deriving the Bellman Expectation Equation | [§4 策略、价值与贝尔曼期望方程](week03.md#w3-4) | [P22](assets/week03/page-22.jpg) |
+| 23 | Reading a Bellman Backup | [§4 策略、价值与贝尔曼期望方程](week03.md#w3-4) | [P23](assets/week03/page-23.jpg) |
+| 24 | The Bellman Equation for Action Values | [§4 策略、价值与贝尔曼期望方程](week03.md#w3-4) | [P24](assets/week03/page-24.jpg) |
+| 25 | Gridworld Under a Random Policy | [§5 随机策略下的网格与机器人](week03.md#w3-5) | [P25](assets/week03/page-25.jpg) |
+| 26 | Evaluating a Robot Policy | [§5 随机策略下的网格与机器人](week03.md#w3-5) | [P26](assets/week03/page-26.jpg) |
+| 27 | Lecture Outline | [§6 最优价值与贝尔曼最优方程](week03.md#w3-6) | [P27](assets/week03/page-27.jpg) |
+| 28 | Optimal Policies and Value Functions | [§6 最优价值与贝尔曼最优方程](week03.md#w3-6) | [P28](assets/week03/page-28.jpg) |
+| 29 | Deriving the Bellman Optimality Equation | [§6 最优价值与贝尔曼最优方程](week03.md#w3-6) | [P29](assets/week03/page-29.jpg) |
+| 30 | Optimal Action Values and Backups | [§6 最优价值与贝尔曼最优方程](week03.md#w3-6) | [P30](assets/week03/page-30.jpg) |
+| 31 | Choosing Actions from Optimal Values | [§6 最优价值与贝尔曼最优方程](week03.md#w3-6) | [P31](assets/week03/page-31.jpg) |
+| 32 | The Optimal Gridworld Policy | [§6 最优价值与贝尔曼最优方程](week03.md#w3-6) | [P32](assets/week03/page-32.jpg) |
+| 33 | Lecture Outline | [§7 动态规划与迭代策略评估](week03.md#w3-7) | [P33](assets/week03/page-33.jpg) |
+| 34 | Dynamic Programming with a Known Model | [§7 动态规划与迭代策略评估](week03.md#w3-7) | [P34](assets/week03/page-34.jpg) |
+| 35 | Iterative Policy Evaluation | [§7 动态规划与迭代策略评估](week03.md#w3-7) | [P35](assets/week03/page-35.jpg) |
+| 36 | A Policy-Evaluation Algorithm | [§7 动态规划与迭代策略评估](week03.md#w3-7) | [P36](assets/week03/page-36.jpg) |
+| 37 | An Episodic Gridworld | [§8 回合制网格的评估](week03.md#w3-8) | [P37](assets/week03/page-37.jpg) |
+| 38 | The First Policy-Evaluation Sweeps | [§8 回合制网格的评估](week03.md#w3-8) | [P38](assets/week03/page-38.jpg) |
+| 39 | Policy Improvement | [§9 策略改进与策略迭代](week03.md#w3-9) | [P39](assets/week03/page-39.jpg) |
+| 40 | Policy Iteration | [§9 策略改进与策略迭代](week03.md#w3-9) | [P40](assets/week03/page-40.jpg) |
+| 41 | Policy Iteration for the Robot | [§9 策略改进与策略迭代](week03.md#w3-9) | [P41](assets/week03/page-41.jpg) |
+| 42 | The Improved Robot Policy | [§9 策略改进与策略迭代](week03.md#w3-9) | [P42](assets/week03/page-42.jpg) |
+| 43 | Deriving Value Iteration | [§10 价值迭代](week03.md#w3-10) | [P43](assets/week03/page-43.jpg) |
+| 44 | A Value-Iteration Algorithm | [§10 价值迭代](week03.md#w3-10) | [P44](assets/week03/page-44.jpg) |
+| 45 | Value Iteration for the Robot | [§10 价值迭代](week03.md#w3-10) | [P45](assets/week03/page-45.jpg) |
+| 46 | Generalized Policy Iteration | [§11 广义策略迭代与下周衔接](week03.md#w3-11) | [P46](assets/week03/page-46.jpg) |
+| 47 | Comparing Dynamic Programming Methods | [§11 广义策略迭代与下周衔接](week03.md#w3-11) | [P47](assets/week03/page-47.jpg) |
+| 48 | Lecture Summary | [§11 广义策略迭代与下周衔接](week03.md#w3-11) | [P48](assets/week03/page-48.jpg) |
+| 49 | Next Week: Value-Based Methods | [§11 广义策略迭代与下周衔接](week03.md#w3-11) | [P49](assets/week03/page-49.jpg) |
+| 50 | References | [§12 复习、自测与参考文献](week03.md#w3-12) | [P50](assets/week03/page-50.jpg) |
