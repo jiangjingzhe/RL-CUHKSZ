@@ -10,6 +10,8 @@
 <a  href="week01.html">第 1 周 · 强化学习导论</a>
 <a  href="week02.html">第 2 周 · 多臂老虎机</a>
 <a  href="week03.html">第 3 周 · MDP 与动态规划</a>
+<a  href="week04-05.html">第 4–5 周 · 基于价值的方法</a>
+<a  href="week06.html">第 6 周 · 价值函数近似与 DQN</a>
 <a  href="week02-appendix.html">第 2 周 · 附录证明</a>
 <a  href="glossary.html">术语与符号</a>
 <a  href="coverage.html">逐页对应表</a>
@@ -25,7 +27,7 @@
 <p>日常学习直接打开 <code>index.html</code>。本页供修改笔记或加入新一周材料时使用。</p>
 <h2 id="heading-1">文件分工</h2>
 <ul>
-<li><code>week01.md</code>、<code>week02.md</code>、<code>week03.md</code>：每周内容的唯一原稿。</li>
+<li><code>week01.md</code>、<code>week02.md</code>、<code>week03.md</code>、<code>week04-05.md</code>、<code>week06.md</code>：每周内容的唯一原稿。</li>
 <li><code>week02-appendix.md</code>：完整证明，与正文互相链接。</li>
 <li><code>README.md</code>：学习入口。生成时转换为 <code>index.html</code>。</li>
 <li><code>glossary.md</code>：统一术语与符号，不重复维护整章解释。</li>
@@ -47,6 +49,7 @@
 <pre><code class="language-sh">python3 tools/sources.py --render
 </code></pre>
 <p>需要 Python 3，以及 <code>pypdf</code>、<code>pypdfium2</code>、<code>Pillow</code>。不重新导出图片时可省略 <code>--render</code>。这个脚本生成页索引与图片，<strong>不会自动替你阅读新课件并写中文笔记</strong>。</p>
+<p>合并课件使用 <code>week04-05</code> 这类来源编号，并保留实际 PDF 页码；不重复计算为两份源文件。仅生成新增来源图片可运行 <code>python3 tools/sources.py --render-source 04-05 --render-source 06</code>，原有 <code>--render</code> 仍会重新导出所有来源。</p>
 <p>每新增一章，还需更新 <code>tools/build.mjs</code> 的 <code>pages</code> 列表、学习入口与术语表，之后重建 HTML。章节模板提供内容结构。</p>
 <h2 id="heading-4">内容检查约定</h2>
 <p>每次检查源页与正文是否匹配，特别是例子数据、实验轴、参数、奖励范围、下标和附录。只写原课件实际展示的内容；扩展说明标明为补充。不要把初值、学习率、探索率或不同实验条件合并成一个设定。</p>
@@ -66,6 +69,10 @@
 <tr>
 <td>2026-09-22</td>
 <td>新增第 3 周 50 页课件笔记、原例推导与自测，更新导航、术语、全页图库和逐页索引，总计 156 页</td>
+</tr>
+<tr>
+<td>2026-10-20</td>
+<td>新增第 4–5 周合并章与第 6 周，包含 87 页原课件、算法推导、原例和 24 道自测；全课程累计 243 页，更新术语与导航</td>
 </tr>
 </tbody></table></div>
 </article>

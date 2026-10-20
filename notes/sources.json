@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "prepared": "2026-09-22",
+  "prepared": "2026-10-20",
   "sources": [
     {
       "week": 1,
@@ -25,6 +25,22 @@
       "pdf_pages": 50,
       "sha256": "c9823261483d0c96276579cd127df7dbff3543a7f857eec404bb96d0356423cd",
       "page_numbering": "1–50"
+    },
+    {
+      "week": "4-5",
+      "path": null,
+      "included_in_repository": false,
+      "pdf_pages": 45,
+      "sha256": "f21ce80901c39def3d3a59864e11908ae64788e882ddc5c0112e84d71a1f339d",
+      "page_numbering": "1–45"
+    },
+    {
+      "week": 6,
+      "path": null,
+      "included_in_repository": false,
+      "pdf_pages": 42,
+      "sha256": "69f381563bed547ef7bfe159a9028ceef89635524fcdbd9a7744ad0cd5ed30e1",
+      "page_numbering": "1–42"
     }
   ]
 }

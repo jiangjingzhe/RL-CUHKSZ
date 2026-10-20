@@ -11,6 +11,8 @@ const pages = [
   ['week01.md', 'week01.html', '第 1 周 · 强化学习导论'],
   ['week02.md', 'week02.html', '第 2 周 · 多臂老虎机'],
   ['week03.md', 'week03.html', '第 3 周 · MDP 与动态规划'],
+  ['week04-05.md', 'week04-05.html', '第 4–5 周 · 基于价值的方法'],
+  ['week06.md', 'week06.html', '第 6 周 · 价值函数近似与 DQN'],
   ['week02-appendix.md', 'week02-appendix.html', '第 2 周 · 附录证明'],
   ['glossary.md', 'glossary.html', '术语与符号'],
   ['coverage.md', 'coverage.html', '逐页对应表'],

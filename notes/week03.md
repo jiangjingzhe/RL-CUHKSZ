@@ -2,7 +2,7 @@
 
 > 来源：`Week 3.pdf`，共 50 页。CSC6129，2026 秋季，Zhongxiang DAI。来源页码均指 PDF 实际页码。“原例”沿用课件设定；“补充解释”、补充推导和自测为学习辅助。
 
-[返回学习入口](README.md) · [第 2 周](week02.md) · [术语与符号](glossary.md) · [逐页对应表](coverage.md#week03) · [原页图库](source-pages.md#w3-p1)
+[返回学习入口](README.md) · [第 2 周](week02.md) · [第 4–5 周](week04-05.md) · [术语与符号](glossary.md) · [逐页对应表](coverage.md#week03) · [原页图库](source-pages.md#w3-p1)
 
 ## 本章怎样学
 

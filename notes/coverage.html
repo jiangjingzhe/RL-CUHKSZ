@@ -10,13 +10,17 @@
 <a  href="week01.html">第 1 周 · 强化学习导论</a>
 <a  href="week02.html">第 2 周 · 多臂老虎机</a>
 <a  href="week03.html">第 3 周 · MDP 与动态规划</a>
+<a  href="week04-05.html">第 4–5 周 · 基于价值的方法</a>
+<a  href="week06.html">第 6 周 · 价值函数近似与 DQN</a>
 <a  href="week02-appendix.html">第 2 周 · 附录证明</a>
 <a  href="glossary.html">术语与符号</a>
 <a aria-current="page" href="coverage.html">逐页对应表</a>
 <a  href="source-pages.html">原页图库</a></nav>
 <details class="page-toc" open><summary>本页目录</summary><nav aria-label="本页目录"><a href="#heading-1">第 1 周：54 页</a>
 <a href="#heading-2">第 2 周：52 页</a>
-<a href="#heading-3">第 3 周：50 页</a></nav></details>
+<a href="#heading-3">第 3 周：50 页</a>
+<a href="#heading-4">第 4–5 周：45 页</a>
+<a href="#heading-5">第 6 周：42 页</a></nav></details>
 <p class="reader-tip">查找内容：⌘F / Ctrl+F<br>公式可直接阅读，图片可放大查看。</p></aside>
 <main id="content"><div class="eyebrow">课程笔记 / 2026 秋季</div><article><h1>原课件逐页对应表</h1>
 <p><a href="index.html">学习入口</a> · <a href="source-pages.html">原页图库</a></p>
@@ -991,6 +995,552 @@
 <td>References</td>
 <td><a href="week03.html#w3-12">§12 复习、自测与参考文献</a></td>
 <td><a href="assets/week03/page-50.jpg">P50</a></td>
+</tr>
+</tbody></table></div>
+<p><a id="week04-05"></a></p>
+<h2 id="heading-4">第 4–5 周：45 页</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th align="right">PDF 页</th>
+<th>原页主题</th>
+<th>中文笔记位置</th>
+<th>原始版面</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>CSC6129 Reinforcement Learning</td>
+<td><a href="week04-05.html#w4-5-1">§1 从模型计算到经验学习及课程安排</a></td>
+<td><a href="assets/week04-05/page-01.jpg">P1</a></td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>These slides cover the material for both Weeks 4 and 5.</td>
+<td><a href="week04-05.html#w4-5-1">§1 从模型计算到经验学习及课程安排</a></td>
+<td><a href="assets/week04-05/page-02.jpg">P2</a></td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Updated Course Plan</td>
+<td><a href="week04-05.html#w4-5-1">§1 从模型计算到经验学习及课程安排</a></td>
+<td><a href="assets/week04-05/page-03.jpg">P3</a></td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Today’s Lecture</td>
+<td><a href="week04-05.html#w4-5-1">§1 从模型计算到经验学习及课程安排</a></td>
+<td><a href="assets/week04-05/page-04.jpg">P4</a></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Lecture Outline</td>
+<td><a href="week04-05.html#w4-5-1">§1 从模型计算到经验学习及课程安排</a></td>
+<td><a href="assets/week04-05/page-05.jpg">P5</a></td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Learning Values from Experience</td>
+<td><a href="week04-05.html#w4-5-1">§1 从模型计算到经验学习及课程安排</a></td>
+<td><a href="assets/week04-05/page-06.jpg">P6</a></td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Monte Carlo Prediction</td>
+<td><a href="week04-05.html#w4-5-2">§2 Monte Carlo 预测</a></td>
+<td><a href="assets/week04-05/page-07.jpg">P7</a></td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>First-Visit and Every-Visit Monte Carlo</td>
+<td><a href="week04-05.html#w4-5-2">§2 Monte Carlo 预测</a></td>
+<td><a href="assets/week04-05/page-08.jpg">P8</a></td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Action Values and Monte Carlo Control</td>
+<td><a href="week04-05.html#w4-5-3">§3 Monte Carlo 控制与探索</a></td>
+<td><a href="assets/week04-05/page-09.jpg">P9</a></td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Exploration in Monte Carlo Control</td>
+<td><a href="week04-05.html#w4-5-3">§3 Monte Carlo 控制与探索</a></td>
+<td><a href="assets/week04-05/page-10.jpg">P10</a></td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>An On-Policy MC Control Algorithm</td>
+<td><a href="week04-05.html#w4-5-3">§3 Monte Carlo 控制与探索</a></td>
+<td><a href="assets/week04-05/page-11.jpg">P11</a></td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Target and Behavior Policies</td>
+<td><a href="week04-05.html#w4-5-4">§4 同策略、异策略与重要性采样</a></td>
+<td><a href="assets/week04-05/page-12.jpg">P12</a></td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>Deriving the Importance-Sampling Ratio</td>
+<td><a href="week04-05.html#w4-5-4">§4 同策略、异策略与重要性采样</a></td>
+<td><a href="assets/week04-05/page-13.jpg">P13</a></td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Importance Sampling: Estimation and Variance</td>
+<td><a href="week04-05.html#w4-5-4">§4 同策略、异策略与重要性采样</a></td>
+<td><a href="assets/week04-05/page-14.jpg">P14</a></td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>Lecture Outline</td>
+<td><a href="week04-05.html#w4-5-5">§5 TD 预测与随机游走</a></td>
+<td><a href="assets/week04-05/page-15.jpg">P15</a></td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>Deriving the TD(0) Update</td>
+<td><a href="week04-05.html#w4-5-5">§5 TD 预测与随机游走</a></td>
+<td><a href="assets/week04-05/page-16.jpg">P16</a></td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td>The Temporal-Diﬀerence Error</td>
+<td><a href="week04-05.html#w4-5-5">§5 TD 预测与随机游走</a></td>
+<td><a href="assets/week04-05/page-17.jpg">P17</a></td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>A Tabular TD(0) Prediction Algorithm</td>
+<td><a href="week04-05.html#w4-5-5">§5 TD 预测与随机游走</a></td>
+<td><a href="assets/week04-05/page-18.jpg">P18</a></td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td>Comparing DP, MC, and TD Prediction</td>
+<td><a href="week04-05.html#w4-5-5">§5 TD 预测与随机游走</a></td>
+<td><a href="assets/week04-05/page-19.jpg">P19</a></td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td>The Random-Walk Prediction Task</td>
+<td><a href="week04-05.html#w4-5-5">§5 TD 预测与随机游走</a></td>
+<td><a href="assets/week04-05/page-20.jpg">P20</a></td>
+</tr>
+<tr>
+<td align="right">21</td>
+<td>A Worked MC and TD Update</td>
+<td><a href="week04-05.html#w4-5-5">§5 TD 预测与随机游走</a></td>
+<td><a href="assets/week04-05/page-21.jpg">P21</a></td>
+</tr>
+<tr>
+<td align="right">22</td>
+<td>Random-Walk Learning Curves</td>
+<td><a href="week04-05.html#w4-5-5">§5 TD 预测与随机游走</a></td>
+<td><a href="assets/week04-05/page-22.jpg">P22</a></td>
+</tr>
+<tr>
+<td align="right">23</td>
+<td>Lecture Outline</td>
+<td><a href="week04-05.html#w4-5-6">§6 Sarsa 同策略控制</a></td>
+<td><a href="assets/week04-05/page-23.jpg">P23</a></td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td>Deriving Sarsa from Action-Value Prediction</td>
+<td><a href="week04-05.html#w4-5-6">§6 Sarsa 同策略控制</a></td>
+<td><a href="assets/week04-05/page-24.jpg">P24</a></td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td>A Sarsa Control Algorithm</td>
+<td><a href="week04-05.html#w4-5-6">§6 Sarsa 同策略控制</a></td>
+<td><a href="assets/week04-05/page-25.jpg">P25</a></td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>Exploration and Sarsa Convergence</td>
+<td><a href="week04-05.html#w4-5-6">§6 Sarsa 同策略控制</a></td>
+<td><a href="assets/week04-05/page-26.jpg">P26</a></td>
+</tr>
+<tr>
+<td align="right">27</td>
+<td>TD(0), Sarsa, and Policy Improvement</td>
+<td><a href="week04-05.html#w4-5-6">§6 Sarsa 同策略控制</a></td>
+<td><a href="assets/week04-05/page-27.jpg">P27</a></td>
+</tr>
+<tr>
+<td align="right">28</td>
+<td>Lecture Outline</td>
+<td><a href="week04-05.html#w4-5-7">§7 Q-learning 异策略控制</a></td>
+<td><a href="assets/week04-05/page-28.jpg">P28</a></td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td>Deriving Q-Learning</td>
+<td><a href="week04-05.html#w4-5-7">§7 Q-learning 异策略控制</a></td>
+<td><a href="assets/week04-05/page-29.jpg">P29</a></td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td>Why Q-Learning Is Oﬀ-Policy</td>
+<td><a href="week04-05.html#w4-5-7">§7 Q-learning 异策略控制</a></td>
+<td><a href="assets/week04-05/page-30.jpg">P30</a></td>
+</tr>
+<tr>
+<td align="right">31</td>
+<td>A Q-Learning Control Algorithm</td>
+<td><a href="week04-05.html#w4-5-7">§7 Q-learning 异策略控制</a></td>
+<td><a href="assets/week04-05/page-31.jpg">P31</a></td>
+</tr>
+<tr>
+<td align="right">32</td>
+<td>Cliﬀ Walking</td>
+<td><a href="week04-05.html#w4-5-8">§8 悬崖行走</a></td>
+<td><a href="assets/week04-05/page-32.jpg">P32</a></td>
+</tr>
+<tr>
+<td align="right">33</td>
+<td>Sarsa and Q-Learning on the Cliﬀ</td>
+<td><a href="week04-05.html#w4-5-8">§8 悬崖行走</a></td>
+<td><a href="assets/week04-05/page-33.jpg">P33</a></td>
+</tr>
+<tr>
+<td align="right">34</td>
+<td>Deriving Expected Sarsa</td>
+<td><a href="week04-05.html#w4-5-9">§9 Expected Sarsa 与三种目标比较</a></td>
+<td><a href="assets/week04-05/page-34.jpg">P34</a></td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>Three Targets for the Same Transition</td>
+<td><a href="week04-05.html#w4-5-9">§9 Expected Sarsa 与三种目标比较</a></td>
+<td><a href="assets/week04-05/page-35.jpg">P35</a></td>
+</tr>
+<tr>
+<td align="right">36</td>
+<td>Q-Learning and Expected Sarsa Backups</td>
+<td><a href="week04-05.html#w4-5-9">§9 Expected Sarsa 与三种目标比较</a></td>
+<td><a href="assets/week04-05/page-36.jpg">P36</a></td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td>What Q-Learning Convergence Requires</td>
+<td><a href="week04-05.html#w4-5-7">§7 Q-learning 异策略控制</a></td>
+<td><a href="assets/week04-05/page-37.jpg">P37</a></td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td>Lecture Outline</td>
+<td><a href="week04-05.html#w4-5-10">§10 最大化偏差与 Double Q-learning</a></td>
+<td><a href="assets/week04-05/page-38.jpg">P38</a></td>
+</tr>
+<tr>
+<td align="right">39</td>
+<td>Maximization Bias</td>
+<td><a href="week04-05.html#w4-5-10">§10 最大化偏差与 Double Q-learning</a></td>
+<td><a href="assets/week04-05/page-39.jpg">P39</a></td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td>Separating Selection from Evaluation</td>
+<td><a href="week04-05.html#w4-5-10">§10 最大化偏差与 Double Q-learning</a></td>
+<td><a href="assets/week04-05/page-40.jpg">P40</a></td>
+</tr>
+<tr>
+<td align="right">41</td>
+<td>A Double Q-Learning Algorithm</td>
+<td><a href="week04-05.html#w4-5-10">§10 最大化偏差与 Double Q-learning</a></td>
+<td><a href="assets/week04-05/page-41.jpg">P41</a></td>
+</tr>
+<tr>
+<td align="right">42</td>
+<td>The Textbook Maximization-Bias Example</td>
+<td><a href="week04-05.html#w4-5-10">§10 最大化偏差与 Double Q-learning</a></td>
+<td><a href="assets/week04-05/page-42.jpg">P42</a></td>
+</tr>
+<tr>
+<td align="right">43</td>
+<td>Comparing Value-Based Learning Methods</td>
+<td><a href="week04-05.html#w4-5-11">§11 方法总表与函数近似预告</a></td>
+<td><a href="assets/week04-05/page-43.jpg">P43</a></td>
+</tr>
+<tr>
+<td align="right">44</td>
+<td>Lecture Summary</td>
+<td><a href="week04-05.html#w4-5-11">§11 方法总表与函数近似预告</a></td>
+<td><a href="assets/week04-05/page-44.jpg">P44</a></td>
+</tr>
+<tr>
+<td align="right">45</td>
+<td>Next Week: Value Function Approximation</td>
+<td><a href="week04-05.html#w4-5-11">§11 方法总表与函数近似预告</a></td>
+<td><a href="assets/week04-05/page-45.jpg">P45</a></td>
+</tr>
+</tbody></table></div>
+<p><a id="week06"></a></p>
+<h2 id="heading-5">第 6 周：42 页</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th align="right">PDF 页</th>
+<th>原页主题</th>
+<th>中文笔记位置</th>
+<th>原始版面</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>CSC6129 Reinforcement Learning</td>
+<td><a href="week06.html#w6-1">§1 为什么要做函数近似</a></td>
+<td><a href="assets/week06/page-01.jpg">P1</a></td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>Today’s Lecture</td>
+<td><a href="week06.html#w6-1">§1 为什么要做函数近似</a></td>
+<td><a href="assets/week06/page-02.jpg">P2</a></td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Lecture Outline</td>
+<td><a href="week06.html#w6-1">§1 为什么要做函数近似</a></td>
+<td><a href="assets/week06/page-03.jpg">P3</a></td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Why Approximate Value Functions?</td>
+<td><a href="week06.html#w6-1">§1 为什么要做函数近似</a></td>
+<td><a href="assets/week06/page-04.jpg">P4</a></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Values, Predictions, and Parameters</td>
+<td><a href="week06.html#w6-1">§1 为什么要做函数近似</a></td>
+<td><a href="assets/week06/page-05.jpg">P5</a></td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Linear Value Function Approximation</td>
+<td><a href="week06.html#w6-2">§2 特征、状态聚合与神经网络</a></td>
+<td><a href="assets/week06/page-06.jpg">P6</a></td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Tabular Values as a Special Case</td>
+<td><a href="week06.html#w6-2">§2 特征、状态聚合与神经网络</a></td>
+<td><a href="assets/week06/page-07.jpg">P7</a></td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>State Aggregation</td>
+<td><a href="week06.html#w6-2">§2 特征、状态聚合与神经网络</a></td>
+<td><a href="assets/week06/page-08.jpg">P8</a></td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Overlapping Features and Generalization</td>
+<td><a href="week06.html#w6-2">§2 特征、状态聚合与神经网络</a></td>
+<td><a href="assets/week06/page-09.jpg">P9</a></td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Neural Value Function Approximation</td>
+<td><a href="week06.html#w6-2">§2 特征、状态聚合与神经网络</a></td>
+<td><a href="assets/week06/page-10.jpg">P10</a></td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>Lecture Outline</td>
+<td><a href="week06.html#w6-3">§3 价值预测的误差目标</a></td>
+<td><a href="assets/week06/page-11.jpg">P11</a></td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>The Value Prediction Objective</td>
+<td><a href="week06.html#w6-3">§3 价值预测的误差目标</a></td>
+<td><a href="assets/week06/page-12.jpg">P12</a></td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>A Weighted Compromise Between States</td>
+<td><a href="week06.html#w6-3">§3 价值预测的误差目标</a></td>
+<td><a href="assets/week06/page-13.jpg">P13</a></td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Deriving the Gradient Update</td>
+<td><a href="week06.html#w6-3">§3 价值预测的误差目标</a></td>
+<td><a href="assets/week06/page-14.jpg">P14</a></td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>Learning from a Sampled Target</td>
+<td><a href="week06.html#w6-3">§3 价值预测的误差目标</a></td>
+<td><a href="assets/week06/page-15.jpg">P15</a></td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>Gradient Monte Carlo Prediction</td>
+<td><a href="week06.html#w6-4">§4 梯度 Monte Carlo</a></td>
+<td><a href="assets/week06/page-16.jpg">P16</a></td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td>A Worked Gradient Monte Carlo Update</td>
+<td><a href="week06.html#w6-4">§4 梯度 Monte Carlo</a></td>
+<td><a href="assets/week06/page-17.jpg">P17</a></td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>The 1000-State Random Walk</td>
+<td><a href="week06.html#w6-5">§5 1000 状态随机游走</a></td>
+<td><a href="assets/week06/page-18.jpg">P18</a></td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td>Monte Carlo with State Aggregation</td>
+<td><a href="week06.html#w6-5">§5 1000 状态随机游走</a></td>
+<td><a href="assets/week06/page-19.jpg">P19</a></td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td>Lecture Outline</td>
+<td><a href="week06.html#w6-6">§6 半梯度 TD 预测</a></td>
+<td><a href="assets/week06/page-20.jpg">P20</a></td>
+</tr>
+<tr>
+<td align="right">21</td>
+<td>A Bootstrapped Target with Approximation</td>
+<td><a href="week06.html#w6-6">§6 半梯度 TD 预测</a></td>
+<td><a href="assets/week06/page-21.jpg">P21</a></td>
+</tr>
+<tr>
+<td align="right">22</td>
+<td>Deriving the Semi-Gradient TD Update</td>
+<td><a href="week06.html#w6-6">§6 半梯度 TD 预测</a></td>
+<td><a href="assets/week06/page-22.jpg">P22</a></td>
+</tr>
+<tr>
+<td align="right">23</td>
+<td>Linear Semi-Gradient TD</td>
+<td><a href="week06.html#w6-6">§6 半梯度 TD 预测</a></td>
+<td><a href="assets/week06/page-23.jpg">P23</a></td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td>A Worked Semi-Gradient TD Update</td>
+<td><a href="week06.html#w6-6">§6 半梯度 TD 预测</a></td>
+<td><a href="assets/week06/page-24.jpg">P24</a></td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td>A Semi-Gradient TD Prediction Algorithm</td>
+<td><a href="week06.html#w6-6">§6 半梯度 TD 预测</a></td>
+<td><a href="assets/week06/page-25.jpg">P25</a></td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>TD with State Aggregation</td>
+<td><a href="week06.html#w6-6">§6 半梯度 TD 预测</a></td>
+<td><a href="assets/week06/page-26.jpg">P26</a></td>
+</tr>
+<tr>
+<td align="right">27</td>
+<td>Gradient Monte Carlo and Semi-Gradient TD</td>
+<td><a href="week06.html#w6-6">§6 半梯度 TD 预测</a></td>
+<td><a href="assets/week06/page-27.jpg">P27</a></td>
+</tr>
+<tr>
+<td align="right">28</td>
+<td>Lecture Outline</td>
+<td><a href="week06.html#w6-7">§7 动作价值近似与半梯度控制</a></td>
+<td><a href="assets/week06/page-28.jpg">P28</a></td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td>Approximating Action Values</td>
+<td><a href="week06.html#w6-7">§7 动作价值近似与半梯度控制</a></td>
+<td><a href="assets/week06/page-29.jpg">P29</a></td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td>A Semi-Gradient Sarsa Algorithm</td>
+<td><a href="week06.html#w6-7">§7 动作价值近似与半梯度控制</a></td>
+<td><a href="assets/week06/page-30.jpg">P30</a></td>
+</tr>
+<tr>
+<td align="right">31</td>
+<td>Q-Learning with Function Approximation</td>
+<td><a href="week06.html#w6-7">§7 动作价值近似与半梯度控制</a></td>
+<td><a href="assets/week06/page-31.jpg">P31</a></td>
+</tr>
+<tr>
+<td align="right">32</td>
+<td>When a Shared Target Keeps Moving</td>
+<td><a href="week06.html#w6-8">§8 移动目标与致命三角</a></td>
+<td><a href="assets/week06/page-32.jpg">P32</a></td>
+</tr>
+<tr>
+<td align="right">33</td>
+<td>The Deadly Triad</td>
+<td><a href="week06.html#w6-8">§8 移动目标与致命三角</a></td>
+<td><a href="assets/week06/page-33.jpg">P33</a></td>
+</tr>
+<tr>
+<td align="right">34</td>
+<td>Lecture Outline</td>
+<td><a href="week06.html#w6-9">§9 DQN 的表示、回放与目标网络</a></td>
+<td><a href="assets/week06/page-34.jpg">P34</a></td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>Deep Q-Networks</td>
+<td><a href="week06.html#w6-9">§9 DQN 的表示、回放与目标网络</a></td>
+<td><a href="assets/week06/page-35.jpg">P35</a></td>
+</tr>
+<tr>
+<td align="right">36</td>
+<td>Experience Replay</td>
+<td><a href="week06.html#w6-9">§9 DQN 的表示、回放与目标网络</a></td>
+<td><a href="assets/week06/page-36.jpg">P36</a></td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td>A Separate Target Network</td>
+<td><a href="week06.html#w6-9">§9 DQN 的表示、回放与目标网络</a></td>
+<td><a href="assets/week06/page-37.jpg">P37</a></td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td>A Worked DQN Target</td>
+<td><a href="week06.html#w6-10">§10 DQN 数值例与学习循环</a></td>
+<td><a href="assets/week06/page-38.jpg">P38</a></td>
+</tr>
+<tr>
+<td align="right">39</td>
+<td>The DQN Learning Loop</td>
+<td><a href="week06.html#w6-10">§10 DQN 数值例与学习循环</a></td>
+<td><a href="assets/week06/page-39.jpg">P39</a></td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td>What DQN Changes, and What It Retains</td>
+<td><a href="week06.html#w6-10">§10 DQN 数值例与学习循环</a></td>
+<td><a href="assets/week06/page-40.jpg">P40</a></td>
+</tr>
+<tr>
+<td align="right">41</td>
+<td>Lecture Summary</td>
+<td><a href="week06.html#w6-11">§11 方法比较与策略优化预告</a></td>
+<td><a href="assets/week06/page-41.jpg">P41</a></td>
+</tr>
+<tr>
+<td align="right">42</td>
+<td>Next Week: Policy Optimization</td>
+<td><a href="week06.html#w6-11">§11 方法比较与策略优化预告</a></td>
+<td><a href="assets/week06/page-42.jpg">P42</a></td>
 </tr>
 </tbody></table></div>
 </article>

@@ -12,7 +12,29 @@ from pypdf import PdfReader
 NOTES = Path(__file__).resolve().parents[1]
 ROOT = NOTES.parent
 
+SOURCES = [(1, 'Week 1-Revised.pdf'), (2, 'Week 2.pdf'),
+           (3, 'Week 3.pdf'), ('4-5', 'Week 4-5.pdf'), (6, 'Week 6.pdf')]
+
+def source_id(week):
+    return '-'.join(f'{int(part):02}' for part in str(week).split('-'))
+
 SECTIONS = {
+    '4-5': {
+        1: '从模型计算到经验学习及课程安排', 2: 'Monte Carlo 预测',
+        3: 'Monte Carlo 控制与探索', 4: '同策略、异策略与重要性采样',
+        5: 'TD 预测与随机游走', 6: 'Sarsa 同策略控制',
+        7: 'Q-learning 异策略控制', 8: '悬崖行走',
+        9: 'Expected Sarsa 与三种目标比较', 10: '最大化偏差与 Double Q-learning',
+        11: '方法总表与函数近似预告', 12: '复习与自测',
+    },
+    6: {
+        1: '为什么要做函数近似', 2: '特征、状态聚合与神经网络',
+        3: '价值预测的误差目标', 4: '梯度 Monte Carlo',
+        5: '1000 状态随机游走', 6: '半梯度 TD 预测',
+        7: '动作价值近似与半梯度控制', 8: '移动目标与致命三角',
+        9: 'DQN 的表示、回放与目标网络', 10: 'DQN 数值例与学习循环',
+        11: '方法比较与策略优化预告', 12: '复习与自测',
+    },
     1: {
         1: '强化学习要解决什么问题', 2: '为什么语言模型也用强化学习',
         3: '智能体怎样与环境交互', 4: '奖励、回报、策略、价值与模型',
@@ -38,6 +60,26 @@ SECTIONS = {
 
 # Every physical PDF page must map to a substantive note section.
 MAP = {
+    '4-5': {
+        **dict.fromkeys(range(1, 7), 1), 7: 2, 8: 2,
+        **dict.fromkeys(range(9, 12), 3),
+        **dict.fromkeys(range(12, 15), 4),
+        **dict.fromkeys(range(15, 23), 5),
+        **dict.fromkeys(range(23, 28), 6),
+        **dict.fromkeys(range(28, 32), 7), 32: 8, 33: 8,
+        **dict.fromkeys(range(34, 37), 9), 37: 7,
+        **dict.fromkeys(range(38, 43), 10),
+        **dict.fromkeys(range(43, 46), 11),
+    },
+    6: {
+        **dict.fromkeys(range(1, 6), 1),
+        **dict.fromkeys(range(6, 11), 2),
+        **dict.fromkeys(range(11, 16), 3), 16: 4, 17: 4, 18: 5, 19: 5,
+        **dict.fromkeys(range(20, 28), 6),
+        **dict.fromkeys(range(28, 32), 7), 32: 8, 33: 8,
+        **dict.fromkeys(range(34, 38), 9),
+        **dict.fromkeys(range(38, 41), 10), 41: 11, 42: 11,
+    },
     3: {
         **dict.fromkeys(range(1, 8), 1),
         **dict.fromkeys(range(8, 11), 2),
@@ -78,21 +120,26 @@ MAP = {
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--render', action='store_true')
+    parser.add_argument('--render-source', action='append', default=[],
+                        choices=[source_id(week) for week, _ in SOURCES],
+                        help='Render only the selected source; repeat for several sources.')
     args = parser.parse_args()
     coverage = ['# 原课件逐页对应表', '',
                 '[学习入口](README.md) · [原页图库](source-pages.md)', '',
                 '逐页列出实际 PDF 页面及其笔记位置。封面、重复目录与分隔页合并到对应章节；知识点、公式、例子与实验在正文重组说明。此表用于溯源，不将仅保留原图等同于中文讲解。', '']
     gallery = ['# 原课件全页图库', '', '[学习入口](README.md) · [逐页对应表](coverage.md)', '',
                '保留用户提供课件的原始页面。中文讲解见每页的“对应笔记”，可点击图片链接查看大图。', '']
-    manifest = {'version': 1, 'prepared': '2026-09-22', 'sources': []}
-    for week, filename in [(1, 'Week 1-Revised.pdf'), (2, 'Week 2.pdf'), (3, 'Week 3.pdf')]:
+    manifest = {'version': 1, 'prepared': '2026-10-20', 'sources': []}
+    for week, filename in SOURCES:
+        week_id = source_id(week)
+        week_label = str(week).replace('-', '–')
         path = ROOT / filename
         pdf = PdfReader(path)
         count = len(pdf.pages)
         if set(MAP[week]) != set(range(1, count+1)):
             raise ValueError(f'Coverage must be updated for {filename}')
         rendered = None
-        if args.render:
+        if args.render or week_id in args.render_source:
             import pypdfium2
             rendered = pypdfium2.PdfDocument(path)
         manifest['sources'].append({
@@ -101,10 +148,10 @@ def main():
             'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
             'page_numbering': '正文 1–47；PDF P48–52 的页脚为附录 1–5' if week == 2 else f'1–{count}',
         })
-        coverage.extend([f'<a id="week{week:02}"></a>', f'## 第 {week} 周：{count} 页', '',
+        coverage.extend([f'<a id="week{week_id}"></a>', f'## 第 {week_label} 周：{count} 页', '',
                          '| PDF 页 | 原页主题 | 中文笔记位置 | 原始版面 |',
                          '| ---: | --- | --- | --- |'])
-        gallery.extend([f'## 第 {week} 周', ''])
+        gallery.extend([f'## 第 {week_label} 周', ''])
         for p, page in enumerate(pdf.pages, 1):
             lines = [line.strip() for line in (page.extract_text() or '').splitlines() if line.strip()]
             title = lines[0]
@@ -114,17 +161,17 @@ def main():
                 title += ' Long-Term Return'
             section = MAP[week][p]
             if isinstance(section, int):
-                target = f'week{week:02}.md#w{week}-{section}'
+                target = f'week{week_id}.md#w{week}-{section}'
                 label = f'§{section} {SECTIONS[week][section]}'
             else:
                 target = f'week02-appendix.md#{section}'
                 label = '附录 A：UCB1 完整证明' if section == 'ucb-proof' else '附录 B：Softmax 求导'
-            pic = f'assets/week{week:02}/page-{p:02}.jpg'
+            pic = f'assets/week{week_id}/page-{p:02}.jpg'
             title = title.replace('|', ' / ')
             coverage.append(f'| {p} | {title} | [{label}]({target}) | [P{p}]({pic}) |')
-            gallery.extend([f'<a id="w{week}-p{p}"></a>', f'### 第 {week} 周 · P{p} · {title}', '',
+            gallery.extend([f'<a id="w{week}-p{p}"></a>', f'### 第 {week_label} 周 · P{p} · {title}', '',
                             f'[对应笔记]({target}) · [查看大图]({pic})', '',
-                            f'![第 {week} 周原课件 P{p}：{title}]({pic})', ''])
+                            f'![第 {week_label} 周原课件 P{p}：{title}]({pic})', ''])
             if rendered:
                 output = NOTES / pic
                 output.parent.mkdir(parents=True, exist_ok=True)

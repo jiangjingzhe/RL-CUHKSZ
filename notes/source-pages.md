@@ -1101,3 +1101,616 @@
 [对应笔记](week03.md#w3-12) · [查看大图](assets/week03/page-50.jpg)
 
 ![第 3 周原课件 P50：References](assets/week03/page-50.jpg)
+
+## 第 4–5 周
+
+<a id="w4-5-p1"></a>
+### 第 4–5 周 · P1 · CSC6129 Reinforcement Learning
+
+[对应笔记](week04-05.md#w4-5-1) · [查看大图](assets/week04-05/page-01.jpg)
+
+![第 4–5 周原课件 P1：CSC6129 Reinforcement Learning](assets/week04-05/page-01.jpg)
+
+<a id="w4-5-p2"></a>
+### 第 4–5 周 · P2 · These slides cover the material for both Weeks 4 and 5.
+
+[对应笔记](week04-05.md#w4-5-1) · [查看大图](assets/week04-05/page-02.jpg)
+
+![第 4–5 周原课件 P2：These slides cover the material for both Weeks 4 and 5.](assets/week04-05/page-02.jpg)
+
+<a id="w4-5-p3"></a>
+### 第 4–5 周 · P3 · Updated Course Plan
+
+[对应笔记](week04-05.md#w4-5-1) · [查看大图](assets/week04-05/page-03.jpg)
+
+![第 4–5 周原课件 P3：Updated Course Plan](assets/week04-05/page-03.jpg)
+
+<a id="w4-5-p4"></a>
+### 第 4–5 周 · P4 · Today’s Lecture
+
+[对应笔记](week04-05.md#w4-5-1) · [查看大图](assets/week04-05/page-04.jpg)
+
+![第 4–5 周原课件 P4：Today’s Lecture](assets/week04-05/page-04.jpg)
+
+<a id="w4-5-p5"></a>
+### 第 4–5 周 · P5 · Lecture Outline
+
+[对应笔记](week04-05.md#w4-5-1) · [查看大图](assets/week04-05/page-05.jpg)
+
+![第 4–5 周原课件 P5：Lecture Outline](assets/week04-05/page-05.jpg)
+
+<a id="w4-5-p6"></a>
+### 第 4–5 周 · P6 · Learning Values from Experience
+
+[对应笔记](week04-05.md#w4-5-1) · [查看大图](assets/week04-05/page-06.jpg)
+
+![第 4–5 周原课件 P6：Learning Values from Experience](assets/week04-05/page-06.jpg)
+
+<a id="w4-5-p7"></a>
+### 第 4–5 周 · P7 · Monte Carlo Prediction
+
+[对应笔记](week04-05.md#w4-5-2) · [查看大图](assets/week04-05/page-07.jpg)
+
+![第 4–5 周原课件 P7：Monte Carlo Prediction](assets/week04-05/page-07.jpg)
+
+<a id="w4-5-p8"></a>
+### 第 4–5 周 · P8 · First-Visit and Every-Visit Monte Carlo
+
+[对应笔记](week04-05.md#w4-5-2) · [查看大图](assets/week04-05/page-08.jpg)
+
+![第 4–5 周原课件 P8：First-Visit and Every-Visit Monte Carlo](assets/week04-05/page-08.jpg)
+
+<a id="w4-5-p9"></a>
+### 第 4–5 周 · P9 · Action Values and Monte Carlo Control
+
+[对应笔记](week04-05.md#w4-5-3) · [查看大图](assets/week04-05/page-09.jpg)
+
+![第 4–5 周原课件 P9：Action Values and Monte Carlo Control](assets/week04-05/page-09.jpg)
+
+<a id="w4-5-p10"></a>
+### 第 4–5 周 · P10 · Exploration in Monte Carlo Control
+
+[对应笔记](week04-05.md#w4-5-3) · [查看大图](assets/week04-05/page-10.jpg)
+
+![第 4–5 周原课件 P10：Exploration in Monte Carlo Control](assets/week04-05/page-10.jpg)
+
+<a id="w4-5-p11"></a>
+### 第 4–5 周 · P11 · An On-Policy MC Control Algorithm
+
+[对应笔记](week04-05.md#w4-5-3) · [查看大图](assets/week04-05/page-11.jpg)
+
+![第 4–5 周原课件 P11：An On-Policy MC Control Algorithm](assets/week04-05/page-11.jpg)
+
+<a id="w4-5-p12"></a>
+### 第 4–5 周 · P12 · Target and Behavior Policies
+
+[对应笔记](week04-05.md#w4-5-4) · [查看大图](assets/week04-05/page-12.jpg)
+
+![第 4–5 周原课件 P12：Target and Behavior Policies](assets/week04-05/page-12.jpg)
+
+<a id="w4-5-p13"></a>
+### 第 4–5 周 · P13 · Deriving the Importance-Sampling Ratio
+
+[对应笔记](week04-05.md#w4-5-4) · [查看大图](assets/week04-05/page-13.jpg)
+
+![第 4–5 周原课件 P13：Deriving the Importance-Sampling Ratio](assets/week04-05/page-13.jpg)
+
+<a id="w4-5-p14"></a>
+### 第 4–5 周 · P14 · Importance Sampling: Estimation and Variance
+
+[对应笔记](week04-05.md#w4-5-4) · [查看大图](assets/week04-05/page-14.jpg)
+
+![第 4–5 周原课件 P14：Importance Sampling: Estimation and Variance](assets/week04-05/page-14.jpg)
+
+<a id="w4-5-p15"></a>
+### 第 4–5 周 · P15 · Lecture Outline
+
+[对应笔记](week04-05.md#w4-5-5) · [查看大图](assets/week04-05/page-15.jpg)
+
+![第 4–5 周原课件 P15：Lecture Outline](assets/week04-05/page-15.jpg)
+
+<a id="w4-5-p16"></a>
+### 第 4–5 周 · P16 · Deriving the TD(0) Update
+
+[对应笔记](week04-05.md#w4-5-5) · [查看大图](assets/week04-05/page-16.jpg)
+
+![第 4–5 周原课件 P16：Deriving the TD(0) Update](assets/week04-05/page-16.jpg)
+
+<a id="w4-5-p17"></a>
+### 第 4–5 周 · P17 · The Temporal-Diﬀerence Error
+
+[对应笔记](week04-05.md#w4-5-5) · [查看大图](assets/week04-05/page-17.jpg)
+
+![第 4–5 周原课件 P17：The Temporal-Diﬀerence Error](assets/week04-05/page-17.jpg)
+
+<a id="w4-5-p18"></a>
+### 第 4–5 周 · P18 · A Tabular TD(0) Prediction Algorithm
+
+[对应笔记](week04-05.md#w4-5-5) · [查看大图](assets/week04-05/page-18.jpg)
+
+![第 4–5 周原课件 P18：A Tabular TD(0) Prediction Algorithm](assets/week04-05/page-18.jpg)
+
+<a id="w4-5-p19"></a>
+### 第 4–5 周 · P19 · Comparing DP, MC, and TD Prediction
+
+[对应笔记](week04-05.md#w4-5-5) · [查看大图](assets/week04-05/page-19.jpg)
+
+![第 4–5 周原课件 P19：Comparing DP, MC, and TD Prediction](assets/week04-05/page-19.jpg)
+
+<a id="w4-5-p20"></a>
+### 第 4–5 周 · P20 · The Random-Walk Prediction Task
+
+[对应笔记](week04-05.md#w4-5-5) · [查看大图](assets/week04-05/page-20.jpg)
+
+![第 4–5 周原课件 P20：The Random-Walk Prediction Task](assets/week04-05/page-20.jpg)
+
+<a id="w4-5-p21"></a>
+### 第 4–5 周 · P21 · A Worked MC and TD Update
+
+[对应笔记](week04-05.md#w4-5-5) · [查看大图](assets/week04-05/page-21.jpg)
+
+![第 4–5 周原课件 P21：A Worked MC and TD Update](assets/week04-05/page-21.jpg)
+
+<a id="w4-5-p22"></a>
+### 第 4–5 周 · P22 · Random-Walk Learning Curves
+
+[对应笔记](week04-05.md#w4-5-5) · [查看大图](assets/week04-05/page-22.jpg)
+
+![第 4–5 周原课件 P22：Random-Walk Learning Curves](assets/week04-05/page-22.jpg)
+
+<a id="w4-5-p23"></a>
+### 第 4–5 周 · P23 · Lecture Outline
+
+[对应笔记](week04-05.md#w4-5-6) · [查看大图](assets/week04-05/page-23.jpg)
+
+![第 4–5 周原课件 P23：Lecture Outline](assets/week04-05/page-23.jpg)
+
+<a id="w4-5-p24"></a>
+### 第 4–5 周 · P24 · Deriving Sarsa from Action-Value Prediction
+
+[对应笔记](week04-05.md#w4-5-6) · [查看大图](assets/week04-05/page-24.jpg)
+
+![第 4–5 周原课件 P24：Deriving Sarsa from Action-Value Prediction](assets/week04-05/page-24.jpg)
+
+<a id="w4-5-p25"></a>
+### 第 4–5 周 · P25 · A Sarsa Control Algorithm
+
+[对应笔记](week04-05.md#w4-5-6) · [查看大图](assets/week04-05/page-25.jpg)
+
+![第 4–5 周原课件 P25：A Sarsa Control Algorithm](assets/week04-05/page-25.jpg)
+
+<a id="w4-5-p26"></a>
+### 第 4–5 周 · P26 · Exploration and Sarsa Convergence
+
+[对应笔记](week04-05.md#w4-5-6) · [查看大图](assets/week04-05/page-26.jpg)
+
+![第 4–5 周原课件 P26：Exploration and Sarsa Convergence](assets/week04-05/page-26.jpg)
+
+<a id="w4-5-p27"></a>
+### 第 4–5 周 · P27 · TD(0), Sarsa, and Policy Improvement
+
+[对应笔记](week04-05.md#w4-5-6) · [查看大图](assets/week04-05/page-27.jpg)
+
+![第 4–5 周原课件 P27：TD(0), Sarsa, and Policy Improvement](assets/week04-05/page-27.jpg)
+
+<a id="w4-5-p28"></a>
+### 第 4–5 周 · P28 · Lecture Outline
+
+[对应笔记](week04-05.md#w4-5-7) · [查看大图](assets/week04-05/page-28.jpg)
+
+![第 4–5 周原课件 P28：Lecture Outline](assets/week04-05/page-28.jpg)
+
+<a id="w4-5-p29"></a>
+### 第 4–5 周 · P29 · Deriving Q-Learning
+
+[对应笔记](week04-05.md#w4-5-7) · [查看大图](assets/week04-05/page-29.jpg)
+
+![第 4–5 周原课件 P29：Deriving Q-Learning](assets/week04-05/page-29.jpg)
+
+<a id="w4-5-p30"></a>
+### 第 4–5 周 · P30 · Why Q-Learning Is Oﬀ-Policy
+
+[对应笔记](week04-05.md#w4-5-7) · [查看大图](assets/week04-05/page-30.jpg)
+
+![第 4–5 周原课件 P30：Why Q-Learning Is Oﬀ-Policy](assets/week04-05/page-30.jpg)
+
+<a id="w4-5-p31"></a>
+### 第 4–5 周 · P31 · A Q-Learning Control Algorithm
+
+[对应笔记](week04-05.md#w4-5-7) · [查看大图](assets/week04-05/page-31.jpg)
+
+![第 4–5 周原课件 P31：A Q-Learning Control Algorithm](assets/week04-05/page-31.jpg)
+
+<a id="w4-5-p32"></a>
+### 第 4–5 周 · P32 · Cliﬀ Walking
+
+[对应笔记](week04-05.md#w4-5-8) · [查看大图](assets/week04-05/page-32.jpg)
+
+![第 4–5 周原课件 P32：Cliﬀ Walking](assets/week04-05/page-32.jpg)
+
+<a id="w4-5-p33"></a>
+### 第 4–5 周 · P33 · Sarsa and Q-Learning on the Cliﬀ
+
+[对应笔记](week04-05.md#w4-5-8) · [查看大图](assets/week04-05/page-33.jpg)
+
+![第 4–5 周原课件 P33：Sarsa and Q-Learning on the Cliﬀ](assets/week04-05/page-33.jpg)
+
+<a id="w4-5-p34"></a>
+### 第 4–5 周 · P34 · Deriving Expected Sarsa
+
+[对应笔记](week04-05.md#w4-5-9) · [查看大图](assets/week04-05/page-34.jpg)
+
+![第 4–5 周原课件 P34：Deriving Expected Sarsa](assets/week04-05/page-34.jpg)
+
+<a id="w4-5-p35"></a>
+### 第 4–5 周 · P35 · Three Targets for the Same Transition
+
+[对应笔记](week04-05.md#w4-5-9) · [查看大图](assets/week04-05/page-35.jpg)
+
+![第 4–5 周原课件 P35：Three Targets for the Same Transition](assets/week04-05/page-35.jpg)
+
+<a id="w4-5-p36"></a>
+### 第 4–5 周 · P36 · Q-Learning and Expected Sarsa Backups
+
+[对应笔记](week04-05.md#w4-5-9) · [查看大图](assets/week04-05/page-36.jpg)
+
+![第 4–5 周原课件 P36：Q-Learning and Expected Sarsa Backups](assets/week04-05/page-36.jpg)
+
+<a id="w4-5-p37"></a>
+### 第 4–5 周 · P37 · What Q-Learning Convergence Requires
+
+[对应笔记](week04-05.md#w4-5-7) · [查看大图](assets/week04-05/page-37.jpg)
+
+![第 4–5 周原课件 P37：What Q-Learning Convergence Requires](assets/week04-05/page-37.jpg)
+
+<a id="w4-5-p38"></a>
+### 第 4–5 周 · P38 · Lecture Outline
+
+[对应笔记](week04-05.md#w4-5-10) · [查看大图](assets/week04-05/page-38.jpg)
+
+![第 4–5 周原课件 P38：Lecture Outline](assets/week04-05/page-38.jpg)
+
+<a id="w4-5-p39"></a>
+### 第 4–5 周 · P39 · Maximization Bias
+
+[对应笔记](week04-05.md#w4-5-10) · [查看大图](assets/week04-05/page-39.jpg)
+
+![第 4–5 周原课件 P39：Maximization Bias](assets/week04-05/page-39.jpg)
+
+<a id="w4-5-p40"></a>
+### 第 4–5 周 · P40 · Separating Selection from Evaluation
+
+[对应笔记](week04-05.md#w4-5-10) · [查看大图](assets/week04-05/page-40.jpg)
+
+![第 4–5 周原课件 P40：Separating Selection from Evaluation](assets/week04-05/page-40.jpg)
+
+<a id="w4-5-p41"></a>
+### 第 4–5 周 · P41 · A Double Q-Learning Algorithm
+
+[对应笔记](week04-05.md#w4-5-10) · [查看大图](assets/week04-05/page-41.jpg)
+
+![第 4–5 周原课件 P41：A Double Q-Learning Algorithm](assets/week04-05/page-41.jpg)
+
+<a id="w4-5-p42"></a>
+### 第 4–5 周 · P42 · The Textbook Maximization-Bias Example
+
+[对应笔记](week04-05.md#w4-5-10) · [查看大图](assets/week04-05/page-42.jpg)
+
+![第 4–5 周原课件 P42：The Textbook Maximization-Bias Example](assets/week04-05/page-42.jpg)
+
+<a id="w4-5-p43"></a>
+### 第 4–5 周 · P43 · Comparing Value-Based Learning Methods
+
+[对应笔记](week04-05.md#w4-5-11) · [查看大图](assets/week04-05/page-43.jpg)
+
+![第 4–5 周原课件 P43：Comparing Value-Based Learning Methods](assets/week04-05/page-43.jpg)
+
+<a id="w4-5-p44"></a>
+### 第 4–5 周 · P44 · Lecture Summary
+
+[对应笔记](week04-05.md#w4-5-11) · [查看大图](assets/week04-05/page-44.jpg)
+
+![第 4–5 周原课件 P44：Lecture Summary](assets/week04-05/page-44.jpg)
+
+<a id="w4-5-p45"></a>
+### 第 4–5 周 · P45 · Next Week: Value Function Approximation
+
+[对应笔记](week04-05.md#w4-5-11) · [查看大图](assets/week04-05/page-45.jpg)
+
+![第 4–5 周原课件 P45：Next Week: Value Function Approximation](assets/week04-05/page-45.jpg)
+
+## 第 6 周
+
+<a id="w6-p1"></a>
+### 第 6 周 · P1 · CSC6129 Reinforcement Learning
+
+[对应笔记](week06.md#w6-1) · [查看大图](assets/week06/page-01.jpg)
+
+![第 6 周原课件 P1：CSC6129 Reinforcement Learning](assets/week06/page-01.jpg)
+
+<a id="w6-p2"></a>
+### 第 6 周 · P2 · Today’s Lecture
+
+[对应笔记](week06.md#w6-1) · [查看大图](assets/week06/page-02.jpg)
+
+![第 6 周原课件 P2：Today’s Lecture](assets/week06/page-02.jpg)
+
+<a id="w6-p3"></a>
+### 第 6 周 · P3 · Lecture Outline
+
+[对应笔记](week06.md#w6-1) · [查看大图](assets/week06/page-03.jpg)
+
+![第 6 周原课件 P3：Lecture Outline](assets/week06/page-03.jpg)
+
+<a id="w6-p4"></a>
+### 第 6 周 · P4 · Why Approximate Value Functions?
+
+[对应笔记](week06.md#w6-1) · [查看大图](assets/week06/page-04.jpg)
+
+![第 6 周原课件 P4：Why Approximate Value Functions?](assets/week06/page-04.jpg)
+
+<a id="w6-p5"></a>
+### 第 6 周 · P5 · Values, Predictions, and Parameters
+
+[对应笔记](week06.md#w6-1) · [查看大图](assets/week06/page-05.jpg)
+
+![第 6 周原课件 P5：Values, Predictions, and Parameters](assets/week06/page-05.jpg)
+
+<a id="w6-p6"></a>
+### 第 6 周 · P6 · Linear Value Function Approximation
+
+[对应笔记](week06.md#w6-2) · [查看大图](assets/week06/page-06.jpg)
+
+![第 6 周原课件 P6：Linear Value Function Approximation](assets/week06/page-06.jpg)
+
+<a id="w6-p7"></a>
+### 第 6 周 · P7 · Tabular Values as a Special Case
+
+[对应笔记](week06.md#w6-2) · [查看大图](assets/week06/page-07.jpg)
+
+![第 6 周原课件 P7：Tabular Values as a Special Case](assets/week06/page-07.jpg)
+
+<a id="w6-p8"></a>
+### 第 6 周 · P8 · State Aggregation
+
+[对应笔记](week06.md#w6-2) · [查看大图](assets/week06/page-08.jpg)
+
+![第 6 周原课件 P8：State Aggregation](assets/week06/page-08.jpg)
+
+<a id="w6-p9"></a>
+### 第 6 周 · P9 · Overlapping Features and Generalization
+
+[对应笔记](week06.md#w6-2) · [查看大图](assets/week06/page-09.jpg)
+
+![第 6 周原课件 P9：Overlapping Features and Generalization](assets/week06/page-09.jpg)
+
+<a id="w6-p10"></a>
+### 第 6 周 · P10 · Neural Value Function Approximation
+
+[对应笔记](week06.md#w6-2) · [查看大图](assets/week06/page-10.jpg)
+
+![第 6 周原课件 P10：Neural Value Function Approximation](assets/week06/page-10.jpg)
+
+<a id="w6-p11"></a>
+### 第 6 周 · P11 · Lecture Outline
+
+[对应笔记](week06.md#w6-3) · [查看大图](assets/week06/page-11.jpg)
+
+![第 6 周原课件 P11：Lecture Outline](assets/week06/page-11.jpg)
+
+<a id="w6-p12"></a>
+### 第 6 周 · P12 · The Value Prediction Objective
+
+[对应笔记](week06.md#w6-3) · [查看大图](assets/week06/page-12.jpg)
+
+![第 6 周原课件 P12：The Value Prediction Objective](assets/week06/page-12.jpg)
+
+<a id="w6-p13"></a>
+### 第 6 周 · P13 · A Weighted Compromise Between States
+
+[对应笔记](week06.md#w6-3) · [查看大图](assets/week06/page-13.jpg)
+
+![第 6 周原课件 P13：A Weighted Compromise Between States](assets/week06/page-13.jpg)
+
+<a id="w6-p14"></a>
+### 第 6 周 · P14 · Deriving the Gradient Update
+
+[对应笔记](week06.md#w6-3) · [查看大图](assets/week06/page-14.jpg)
+
+![第 6 周原课件 P14：Deriving the Gradient Update](assets/week06/page-14.jpg)
+
+<a id="w6-p15"></a>
+### 第 6 周 · P15 · Learning from a Sampled Target
+
+[对应笔记](week06.md#w6-3) · [查看大图](assets/week06/page-15.jpg)
+
+![第 6 周原课件 P15：Learning from a Sampled Target](assets/week06/page-15.jpg)
+
+<a id="w6-p16"></a>
+### 第 6 周 · P16 · Gradient Monte Carlo Prediction
+
+[对应笔记](week06.md#w6-4) · [查看大图](assets/week06/page-16.jpg)
+
+![第 6 周原课件 P16：Gradient Monte Carlo Prediction](assets/week06/page-16.jpg)
+
+<a id="w6-p17"></a>
+### 第 6 周 · P17 · A Worked Gradient Monte Carlo Update
+
+[对应笔记](week06.md#w6-4) · [查看大图](assets/week06/page-17.jpg)
+
+![第 6 周原课件 P17：A Worked Gradient Monte Carlo Update](assets/week06/page-17.jpg)
+
+<a id="w6-p18"></a>
+### 第 6 周 · P18 · The 1000-State Random Walk
+
+[对应笔记](week06.md#w6-5) · [查看大图](assets/week06/page-18.jpg)
+
+![第 6 周原课件 P18：The 1000-State Random Walk](assets/week06/page-18.jpg)
+
+<a id="w6-p19"></a>
+### 第 6 周 · P19 · Monte Carlo with State Aggregation
+
+[对应笔记](week06.md#w6-5) · [查看大图](assets/week06/page-19.jpg)
+
+![第 6 周原课件 P19：Monte Carlo with State Aggregation](assets/week06/page-19.jpg)
+
+<a id="w6-p20"></a>
+### 第 6 周 · P20 · Lecture Outline
+
+[对应笔记](week06.md#w6-6) · [查看大图](assets/week06/page-20.jpg)
+
+![第 6 周原课件 P20：Lecture Outline](assets/week06/page-20.jpg)
+
+<a id="w6-p21"></a>
+### 第 6 周 · P21 · A Bootstrapped Target with Approximation
+
+[对应笔记](week06.md#w6-6) · [查看大图](assets/week06/page-21.jpg)
+
+![第 6 周原课件 P21：A Bootstrapped Target with Approximation](assets/week06/page-21.jpg)
+
+<a id="w6-p22"></a>
+### 第 6 周 · P22 · Deriving the Semi-Gradient TD Update
+
+[对应笔记](week06.md#w6-6) · [查看大图](assets/week06/page-22.jpg)
+
+![第 6 周原课件 P22：Deriving the Semi-Gradient TD Update](assets/week06/page-22.jpg)
+
+<a id="w6-p23"></a>
+### 第 6 周 · P23 · Linear Semi-Gradient TD
+
+[对应笔记](week06.md#w6-6) · [查看大图](assets/week06/page-23.jpg)
+
+![第 6 周原课件 P23：Linear Semi-Gradient TD](assets/week06/page-23.jpg)
+
+<a id="w6-p24"></a>
+### 第 6 周 · P24 · A Worked Semi-Gradient TD Update
+
+[对应笔记](week06.md#w6-6) · [查看大图](assets/week06/page-24.jpg)
+
+![第 6 周原课件 P24：A Worked Semi-Gradient TD Update](assets/week06/page-24.jpg)
+
+<a id="w6-p25"></a>
+### 第 6 周 · P25 · A Semi-Gradient TD Prediction Algorithm
+
+[对应笔记](week06.md#w6-6) · [查看大图](assets/week06/page-25.jpg)
+
+![第 6 周原课件 P25：A Semi-Gradient TD Prediction Algorithm](assets/week06/page-25.jpg)
+
+<a id="w6-p26"></a>
+### 第 6 周 · P26 · TD with State Aggregation
+
+[对应笔记](week06.md#w6-6) · [查看大图](assets/week06/page-26.jpg)
+
+![第 6 周原课件 P26：TD with State Aggregation](assets/week06/page-26.jpg)
+
+<a id="w6-p27"></a>
+### 第 6 周 · P27 · Gradient Monte Carlo and Semi-Gradient TD
+
+[对应笔记](week06.md#w6-6) · [查看大图](assets/week06/page-27.jpg)
+
+![第 6 周原课件 P27：Gradient Monte Carlo and Semi-Gradient TD](assets/week06/page-27.jpg)
+
+<a id="w6-p28"></a>
+### 第 6 周 · P28 · Lecture Outline
+
+[对应笔记](week06.md#w6-7) · [查看大图](assets/week06/page-28.jpg)
+
+![第 6 周原课件 P28：Lecture Outline](assets/week06/page-28.jpg)
+
+<a id="w6-p29"></a>
+### 第 6 周 · P29 · Approximating Action Values
+
+[对应笔记](week06.md#w6-7) · [查看大图](assets/week06/page-29.jpg)
+
+![第 6 周原课件 P29：Approximating Action Values](assets/week06/page-29.jpg)
+
+<a id="w6-p30"></a>
+### 第 6 周 · P30 · A Semi-Gradient Sarsa Algorithm
+
+[对应笔记](week06.md#w6-7) · [查看大图](assets/week06/page-30.jpg)
+
+![第 6 周原课件 P30：A Semi-Gradient Sarsa Algorithm](assets/week06/page-30.jpg)
+
+<a id="w6-p31"></a>
+### 第 6 周 · P31 · Q-Learning with Function Approximation
+
+[对应笔记](week06.md#w6-7) · [查看大图](assets/week06/page-31.jpg)
+
+![第 6 周原课件 P31：Q-Learning with Function Approximation](assets/week06/page-31.jpg)
+
+<a id="w6-p32"></a>
+### 第 6 周 · P32 · When a Shared Target Keeps Moving
+
+[对应笔记](week06.md#w6-8) · [查看大图](assets/week06/page-32.jpg)
+
+![第 6 周原课件 P32：When a Shared Target Keeps Moving](assets/week06/page-32.jpg)
+
+<a id="w6-p33"></a>
+### 第 6 周 · P33 · The Deadly Triad
+
+[对应笔记](week06.md#w6-8) · [查看大图](assets/week06/page-33.jpg)
+
+![第 6 周原课件 P33：The Deadly Triad](assets/week06/page-33.jpg)
+
+<a id="w6-p34"></a>
+### 第 6 周 · P34 · Lecture Outline
+
+[对应笔记](week06.md#w6-9) · [查看大图](assets/week06/page-34.jpg)
+
+![第 6 周原课件 P34：Lecture Outline](assets/week06/page-34.jpg)
+
+<a id="w6-p35"></a>
+### 第 6 周 · P35 · Deep Q-Networks
+
+[对应笔记](week06.md#w6-9) · [查看大图](assets/week06/page-35.jpg)
+
+![第 6 周原课件 P35：Deep Q-Networks](assets/week06/page-35.jpg)
+
+<a id="w6-p36"></a>
+### 第 6 周 · P36 · Experience Replay
+
+[对应笔记](week06.md#w6-9) · [查看大图](assets/week06/page-36.jpg)
+
+![第 6 周原课件 P36：Experience Replay](assets/week06/page-36.jpg)
+
+<a id="w6-p37"></a>
+### 第 6 周 · P37 · A Separate Target Network
+
+[对应笔记](week06.md#w6-9) · [查看大图](assets/week06/page-37.jpg)
+
+![第 6 周原课件 P37：A Separate Target Network](assets/week06/page-37.jpg)
+
+<a id="w6-p38"></a>
+### 第 6 周 · P38 · A Worked DQN Target
+
+[对应笔记](week06.md#w6-10) · [查看大图](assets/week06/page-38.jpg)
+
+![第 6 周原课件 P38：A Worked DQN Target](assets/week06/page-38.jpg)
+
+<a id="w6-p39"></a>
+### 第 6 周 · P39 · The DQN Learning Loop
+
+[对应笔记](week06.md#w6-10) · [查看大图](assets/week06/page-39.jpg)
+
+![第 6 周原课件 P39：The DQN Learning Loop](assets/week06/page-39.jpg)
+
+<a id="w6-p40"></a>
+### 第 6 周 · P40 · What DQN Changes, and What It Retains
+
+[对应笔记](week06.md#w6-10) · [查看大图](assets/week06/page-40.jpg)
+
+![第 6 周原课件 P40：What DQN Changes, and What It Retains](assets/week06/page-40.jpg)
+
+<a id="w6-p41"></a>
+### 第 6 周 · P41 · Lecture Summary
+
+[对应笔记](week06.md#w6-11) · [查看大图](assets/week06/page-41.jpg)
+
+![第 6 周原课件 P41：Lecture Summary](assets/week06/page-41.jpg)
+
+<a id="w6-p42"></a>
+### 第 6 周 · P42 · Next Week: Policy Optimization
+
+[对应笔记](week06.md#w6-11) · [查看大图](assets/week06/page-42.jpg)
+
+![第 6 周原课件 P42：Next Week: Policy Optimization](assets/week06/page-42.jpg)

@@ -177,3 +177,102 @@
 | 48 | Lecture Summary | [§11 广义策略迭代与下周衔接](week03.md#w3-11) | [P48](assets/week03/page-48.jpg) |
 | 49 | Next Week: Value-Based Methods | [§11 广义策略迭代与下周衔接](week03.md#w3-11) | [P49](assets/week03/page-49.jpg) |
 | 50 | References | [§12 复习、自测与参考文献](week03.md#w3-12) | [P50](assets/week03/page-50.jpg) |
+
+<a id="week04-05"></a>
+## 第 4–5 周：45 页
+
+| PDF 页 | 原页主题 | 中文笔记位置 | 原始版面 |
+| ---: | --- | --- | --- |
+| 1 | CSC6129 Reinforcement Learning | [§1 从模型计算到经验学习及课程安排](week04-05.md#w4-5-1) | [P1](assets/week04-05/page-01.jpg) |
+| 2 | These slides cover the material for both Weeks 4 and 5. | [§1 从模型计算到经验学习及课程安排](week04-05.md#w4-5-1) | [P2](assets/week04-05/page-02.jpg) |
+| 3 | Updated Course Plan | [§1 从模型计算到经验学习及课程安排](week04-05.md#w4-5-1) | [P3](assets/week04-05/page-03.jpg) |
+| 4 | Today’s Lecture | [§1 从模型计算到经验学习及课程安排](week04-05.md#w4-5-1) | [P4](assets/week04-05/page-04.jpg) |
+| 5 | Lecture Outline | [§1 从模型计算到经验学习及课程安排](week04-05.md#w4-5-1) | [P5](assets/week04-05/page-05.jpg) |
+| 6 | Learning Values from Experience | [§1 从模型计算到经验学习及课程安排](week04-05.md#w4-5-1) | [P6](assets/week04-05/page-06.jpg) |
+| 7 | Monte Carlo Prediction | [§2 Monte Carlo 预测](week04-05.md#w4-5-2) | [P7](assets/week04-05/page-07.jpg) |
+| 8 | First-Visit and Every-Visit Monte Carlo | [§2 Monte Carlo 预测](week04-05.md#w4-5-2) | [P8](assets/week04-05/page-08.jpg) |
+| 9 | Action Values and Monte Carlo Control | [§3 Monte Carlo 控制与探索](week04-05.md#w4-5-3) | [P9](assets/week04-05/page-09.jpg) |
+| 10 | Exploration in Monte Carlo Control | [§3 Monte Carlo 控制与探索](week04-05.md#w4-5-3) | [P10](assets/week04-05/page-10.jpg) |
+| 11 | An On-Policy MC Control Algorithm | [§3 Monte Carlo 控制与探索](week04-05.md#w4-5-3) | [P11](assets/week04-05/page-11.jpg) |
+| 12 | Target and Behavior Policies | [§4 同策略、异策略与重要性采样](week04-05.md#w4-5-4) | [P12](assets/week04-05/page-12.jpg) |
+| 13 | Deriving the Importance-Sampling Ratio | [§4 同策略、异策略与重要性采样](week04-05.md#w4-5-4) | [P13](assets/week04-05/page-13.jpg) |
+| 14 | Importance Sampling: Estimation and Variance | [§4 同策略、异策略与重要性采样](week04-05.md#w4-5-4) | [P14](assets/week04-05/page-14.jpg) |
+| 15 | Lecture Outline | [§5 TD 预测与随机游走](week04-05.md#w4-5-5) | [P15](assets/week04-05/page-15.jpg) |
+| 16 | Deriving the TD(0) Update | [§5 TD 预测与随机游走](week04-05.md#w4-5-5) | [P16](assets/week04-05/page-16.jpg) |
+| 17 | The Temporal-Diﬀerence Error | [§5 TD 预测与随机游走](week04-05.md#w4-5-5) | [P17](assets/week04-05/page-17.jpg) |
+| 18 | A Tabular TD(0) Prediction Algorithm | [§5 TD 预测与随机游走](week04-05.md#w4-5-5) | [P18](assets/week04-05/page-18.jpg) |
+| 19 | Comparing DP, MC, and TD Prediction | [§5 TD 预测与随机游走](week04-05.md#w4-5-5) | [P19](assets/week04-05/page-19.jpg) |
+| 20 | The Random-Walk Prediction Task | [§5 TD 预测与随机游走](week04-05.md#w4-5-5) | [P20](assets/week04-05/page-20.jpg) |
+| 21 | A Worked MC and TD Update | [§5 TD 预测与随机游走](week04-05.md#w4-5-5) | [P21](assets/week04-05/page-21.jpg) |
+| 22 | Random-Walk Learning Curves | [§5 TD 预测与随机游走](week04-05.md#w4-5-5) | [P22](assets/week04-05/page-22.jpg) |
+| 23 | Lecture Outline | [§6 Sarsa 同策略控制](week04-05.md#w4-5-6) | [P23](assets/week04-05/page-23.jpg) |
+| 24 | Deriving Sarsa from Action-Value Prediction | [§6 Sarsa 同策略控制](week04-05.md#w4-5-6) | [P24](assets/week04-05/page-24.jpg) |
+| 25 | A Sarsa Control Algorithm | [§6 Sarsa 同策略控制](week04-05.md#w4-5-6) | [P25](assets/week04-05/page-25.jpg) |
+| 26 | Exploration and Sarsa Convergence | [§6 Sarsa 同策略控制](week04-05.md#w4-5-6) | [P26](assets/week04-05/page-26.jpg) |
+| 27 | TD(0), Sarsa, and Policy Improvement | [§6 Sarsa 同策略控制](week04-05.md#w4-5-6) | [P27](assets/week04-05/page-27.jpg) |
+| 28 | Lecture Outline | [§7 Q-learning 异策略控制](week04-05.md#w4-5-7) | [P28](assets/week04-05/page-28.jpg) |
+| 29 | Deriving Q-Learning | [§7 Q-learning 异策略控制](week04-05.md#w4-5-7) | [P29](assets/week04-05/page-29.jpg) |
+| 30 | Why Q-Learning Is Oﬀ-Policy | [§7 Q-learning 异策略控制](week04-05.md#w4-5-7) | [P30](assets/week04-05/page-30.jpg) |
+| 31 | A Q-Learning Control Algorithm | [§7 Q-learning 异策略控制](week04-05.md#w4-5-7) | [P31](assets/week04-05/page-31.jpg) |
+| 32 | Cliﬀ Walking | [§8 悬崖行走](week04-05.md#w4-5-8) | [P32](assets/week04-05/page-32.jpg) |
+| 33 | Sarsa and Q-Learning on the Cliﬀ | [§8 悬崖行走](week04-05.md#w4-5-8) | [P33](assets/week04-05/page-33.jpg) |
+| 34 | Deriving Expected Sarsa | [§9 Expected Sarsa 与三种目标比较](week04-05.md#w4-5-9) | [P34](assets/week04-05/page-34.jpg) |
+| 35 | Three Targets for the Same Transition | [§9 Expected Sarsa 与三种目标比较](week04-05.md#w4-5-9) | [P35](assets/week04-05/page-35.jpg) |
+| 36 | Q-Learning and Expected Sarsa Backups | [§9 Expected Sarsa 与三种目标比较](week04-05.md#w4-5-9) | [P36](assets/week04-05/page-36.jpg) |
+| 37 | What Q-Learning Convergence Requires | [§7 Q-learning 异策略控制](week04-05.md#w4-5-7) | [P37](assets/week04-05/page-37.jpg) |
+| 38 | Lecture Outline | [§10 最大化偏差与 Double Q-learning](week04-05.md#w4-5-10) | [P38](assets/week04-05/page-38.jpg) |
+| 39 | Maximization Bias | [§10 最大化偏差与 Double Q-learning](week04-05.md#w4-5-10) | [P39](assets/week04-05/page-39.jpg) |
+| 40 | Separating Selection from Evaluation | [§10 最大化偏差与 Double Q-learning](week04-05.md#w4-5-10) | [P40](assets/week04-05/page-40.jpg) |
+| 41 | A Double Q-Learning Algorithm | [§10 最大化偏差与 Double Q-learning](week04-05.md#w4-5-10) | [P41](assets/week04-05/page-41.jpg) |
+| 42 | The Textbook Maximization-Bias Example | [§10 最大化偏差与 Double Q-learning](week04-05.md#w4-5-10) | [P42](assets/week04-05/page-42.jpg) |
+| 43 | Comparing Value-Based Learning Methods | [§11 方法总表与函数近似预告](week04-05.md#w4-5-11) | [P43](assets/week04-05/page-43.jpg) |
+| 44 | Lecture Summary | [§11 方法总表与函数近似预告](week04-05.md#w4-5-11) | [P44](assets/week04-05/page-44.jpg) |
+| 45 | Next Week: Value Function Approximation | [§11 方法总表与函数近似预告](week04-05.md#w4-5-11) | [P45](assets/week04-05/page-45.jpg) |
+
+<a id="week06"></a>
+## 第 6 周：42 页
+
+| PDF 页 | 原页主题 | 中文笔记位置 | 原始版面 |
+| ---: | --- | --- | --- |
+| 1 | CSC6129 Reinforcement Learning | [§1 为什么要做函数近似](week06.md#w6-1) | [P1](assets/week06/page-01.jpg) |
+| 2 | Today’s Lecture | [§1 为什么要做函数近似](week06.md#w6-1) | [P2](assets/week06/page-02.jpg) |
+| 3 | Lecture Outline | [§1 为什么要做函数近似](week06.md#w6-1) | [P3](assets/week06/page-03.jpg) |
+| 4 | Why Approximate Value Functions? | [§1 为什么要做函数近似](week06.md#w6-1) | [P4](assets/week06/page-04.jpg) |
+| 5 | Values, Predictions, and Parameters | [§1 为什么要做函数近似](week06.md#w6-1) | [P5](assets/week06/page-05.jpg) |
+| 6 | Linear Value Function Approximation | [§2 特征、状态聚合与神经网络](week06.md#w6-2) | [P6](assets/week06/page-06.jpg) |
+| 7 | Tabular Values as a Special Case | [§2 特征、状态聚合与神经网络](week06.md#w6-2) | [P7](assets/week06/page-07.jpg) |
+| 8 | State Aggregation | [§2 特征、状态聚合与神经网络](week06.md#w6-2) | [P8](assets/week06/page-08.jpg) |
+| 9 | Overlapping Features and Generalization | [§2 特征、状态聚合与神经网络](week06.md#w6-2) | [P9](assets/week06/page-09.jpg) |
+| 10 | Neural Value Function Approximation | [§2 特征、状态聚合与神经网络](week06.md#w6-2) | [P10](assets/week06/page-10.jpg) |
+| 11 | Lecture Outline | [§3 价值预测的误差目标](week06.md#w6-3) | [P11](assets/week06/page-11.jpg) |
+| 12 | The Value Prediction Objective | [§3 价值预测的误差目标](week06.md#w6-3) | [P12](assets/week06/page-12.jpg) |
+| 13 | A Weighted Compromise Between States | [§3 价值预测的误差目标](week06.md#w6-3) | [P13](assets/week06/page-13.jpg) |
+| 14 | Deriving the Gradient Update | [§3 价值预测的误差目标](week06.md#w6-3) | [P14](assets/week06/page-14.jpg) |
+| 15 | Learning from a Sampled Target | [§3 价值预测的误差目标](week06.md#w6-3) | [P15](assets/week06/page-15.jpg) |
+| 16 | Gradient Monte Carlo Prediction | [§4 梯度 Monte Carlo](week06.md#w6-4) | [P16](assets/week06/page-16.jpg) |
+| 17 | A Worked Gradient Monte Carlo Update | [§4 梯度 Monte Carlo](week06.md#w6-4) | [P17](assets/week06/page-17.jpg) |
+| 18 | The 1000-State Random Walk | [§5 1000 状态随机游走](week06.md#w6-5) | [P18](assets/week06/page-18.jpg) |
+| 19 | Monte Carlo with State Aggregation | [§5 1000 状态随机游走](week06.md#w6-5) | [P19](assets/week06/page-19.jpg) |
+| 20 | Lecture Outline | [§6 半梯度 TD 预测](week06.md#w6-6) | [P20](assets/week06/page-20.jpg) |
+| 21 | A Bootstrapped Target with Approximation | [§6 半梯度 TD 预测](week06.md#w6-6) | [P21](assets/week06/page-21.jpg) |
+| 22 | Deriving the Semi-Gradient TD Update | [§6 半梯度 TD 预测](week06.md#w6-6) | [P22](assets/week06/page-22.jpg) |
+| 23 | Linear Semi-Gradient TD | [§6 半梯度 TD 预测](week06.md#w6-6) | [P23](assets/week06/page-23.jpg) |
+| 24 | A Worked Semi-Gradient TD Update | [§6 半梯度 TD 预测](week06.md#w6-6) | [P24](assets/week06/page-24.jpg) |
+| 25 | A Semi-Gradient TD Prediction Algorithm | [§6 半梯度 TD 预测](week06.md#w6-6) | [P25](assets/week06/page-25.jpg) |
+| 26 | TD with State Aggregation | [§6 半梯度 TD 预测](week06.md#w6-6) | [P26](assets/week06/page-26.jpg) |
+| 27 | Gradient Monte Carlo and Semi-Gradient TD | [§6 半梯度 TD 预测](week06.md#w6-6) | [P27](assets/week06/page-27.jpg) |
+| 28 | Lecture Outline | [§7 动作价值近似与半梯度控制](week06.md#w6-7) | [P28](assets/week06/page-28.jpg) |
+| 29 | Approximating Action Values | [§7 动作价值近似与半梯度控制](week06.md#w6-7) | [P29](assets/week06/page-29.jpg) |
+| 30 | A Semi-Gradient Sarsa Algorithm | [§7 动作价值近似与半梯度控制](week06.md#w6-7) | [P30](assets/week06/page-30.jpg) |
+| 31 | Q-Learning with Function Approximation | [§7 动作价值近似与半梯度控制](week06.md#w6-7) | [P31](assets/week06/page-31.jpg) |
+| 32 | When a Shared Target Keeps Moving | [§8 移动目标与致命三角](week06.md#w6-8) | [P32](assets/week06/page-32.jpg) |
+| 33 | The Deadly Triad | [§8 移动目标与致命三角](week06.md#w6-8) | [P33](assets/week06/page-33.jpg) |
+| 34 | Lecture Outline | [§9 DQN 的表示、回放与目标网络](week06.md#w6-9) | [P34](assets/week06/page-34.jpg) |
+| 35 | Deep Q-Networks | [§9 DQN 的表示、回放与目标网络](week06.md#w6-9) | [P35](assets/week06/page-35.jpg) |
+| 36 | Experience Replay | [§9 DQN 的表示、回放与目标网络](week06.md#w6-9) | [P36](assets/week06/page-36.jpg) |
+| 37 | A Separate Target Network | [§9 DQN 的表示、回放与目标网络](week06.md#w6-9) | [P37](assets/week06/page-37.jpg) |
+| 38 | A Worked DQN Target | [§10 DQN 数值例与学习循环](week06.md#w6-10) | [P38](assets/week06/page-38.jpg) |
+| 39 | The DQN Learning Loop | [§10 DQN 数值例与学习循环](week06.md#w6-10) | [P39](assets/week06/page-39.jpg) |
+| 40 | What DQN Changes, and What It Retains | [§10 DQN 数值例与学习循环](week06.md#w6-10) | [P40](assets/week06/page-40.jpg) |
+| 41 | Lecture Summary | [§11 方法比较与策略优化预告](week06.md#w6-11) | [P41](assets/week06/page-41.jpg) |
+| 42 | Next Week: Policy Optimization | [§11 方法比较与策略优化预告](week06.md#w6-11) | [P42](assets/week06/page-42.jpg) |

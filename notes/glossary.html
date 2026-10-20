@@ -10,6 +10,8 @@
 <a  href="week01.html">第 1 周 · 强化学习导论</a>
 <a  href="week02.html">第 2 周 · 多臂老虎机</a>
 <a  href="week03.html">第 3 周 · MDP 与动态规划</a>
+<a  href="week04-05.html">第 4–5 周 · 基于价值的方法</a>
+<a  href="week06.html">第 6 周 · 价值函数近似与 DQN</a>
 <a  href="week02-appendix.html">第 2 周 · 附录证明</a>
 <a aria-current="page" href="glossary.html">术语与符号</a>
 <a  href="coverage.html">逐页对应表</a>
@@ -19,10 +21,12 @@
 <a href="#heading-3">3. LLM 预览缩写</a>
 <a href="#heading-4">4. 数学记号</a>
 <a href="#heading-5">5. 三组高频混淆</a>
-<a href="#heading-6">6. MDP 与动态规划</a></nav></details>
+<a href="#heading-6">6. MDP 与动态规划</a>
+<a href="#heading-7">7. 从完整回报到一步价值学习</a>
+<a href="#heading-8">8. 函数近似与深度价值学习</a></nav></details>
 <p class="reader-tip">查找内容：⌘F / Ctrl+F<br>公式可直接阅读，图片可放大查看。</p></aside>
 <main id="content"><div class="eyebrow">课程笔记 / 2026 秋季</div><article><h1>术语与符号速查</h1>
-<p><a href="index.html">学习入口</a> · <a href="week01.html">第 1 周</a> · <a href="week02.html">第 2 周</a> · <a href="week03.html">第 3 周</a></p>
+<p><a href="index.html">学习入口</a> · <a href="week01.html">第 1 周</a> · <a href="week02.html">第 2 周</a> · <a href="week03.html">第 3 周</a> · <a href="week04-05.html">第 4–5 周</a> · <a href="week06.html">第 6 周</a></p>
 <h2 id="heading-1">1. 基础术语</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -633,6 +637,232 @@
 <td>本轮最大变化、停止阈值</td>
 <td>本章 DP 中使用；不同于 Bandit 次优差距 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Δ</mi><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">\Delta_a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">Δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></td>
 <td><a href="week03.html#w3-7">W3 §7</a></td>
+</tr>
+</tbody></table></div>
+<h2 id="heading-7">7. 从完整回报到一步价值学习</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文 / 记号</th>
+<th>含义</th>
+<th>详细解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>蒙特卡洛预测</td>
+<td>Monte Carlo，MC</td>
+<td>对完整回合的实际回报求平均</td>
+<td><a href="week04-05.html#w4-5-2">W4–5 §2</a></td>
+</tr>
+<tr>
+<td>首次 / 每次访问</td>
+<td>First-visit / Every-visit</td>
+<td>每回合采用最早访问 / 全部访问的回报</td>
+<td><a href="week04-05.html#w4-5-2">W4–5 §2</a></td>
+</tr>
+<tr>
+<td>自举</td>
+<td>Bootstrapping</td>
+<td>用现有价值预测构造更新目标</td>
+<td><a href="week04-05.html#w4-5-5">W4–5 §5</a></td>
+</tr>
+<tr>
+<td>探索起点</td>
+<td>Exploring starts</td>
+<td>各状态–动作对均有非零概率成为回合起点</td>
+<td><a href="week04-05.html#w4-5-3">W4–5 §3</a></td>
+</tr>
+<tr>
+<td>目标 / 行为策略</td>
+<td>Target / Behavior policy</td>
+<td>希望评估的策略 / 实际生成经验的策略</td>
+<td><a href="week04-05.html#w4-5-4">W4–5 §4</a></td>
+</tr>
+<tr>
+<td>同 / 异策略</td>
+<td>On-policy / Off-policy</td>
+<td>目标与行为相同 / 可以不同</td>
+<td><a href="week04-05.html#w4-5-4">W4–5 §4</a></td>
+</tr>
+<tr>
+<td>覆盖</td>
+<td>Coverage</td>
+<td>目标可能选择的动作也可由行为选到</td>
+<td><a href="week04-05.html#w4-5-4">W4–5 §4</a></td>
+</tr>
+<tr>
+<td>重要性采样</td>
+<td>Importance sampling，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ρ</span></span></span></span></td>
+<td>用策略概率比重加权行为轨迹</td>
+<td><a href="week04-05.html#w4-5-4">W4–5 §4</a></td>
+</tr>
+<tr>
+<td>TD(0)</td>
+<td>One-step TD prediction</td>
+<td>使用一次奖励和后继预测的一步状态价值更新</td>
+<td><a href="week04-05.html#w4-5-5">W4–5 §5</a></td>
+</tr>
+<tr>
+<td>TD 误差</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\delta_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></td>
+<td>一步目标减去当前预测</td>
+<td><a href="week04-05.html#w4-5-5">W4–5 §5</a></td>
+</tr>
+<tr>
+<td>Sarsa</td>
+<td>State–action–reward–state–action</td>
+<td>使用实际下一动作的同策略 TD 方法</td>
+<td><a href="week04-05.html#w4-5-6">W4–5 §6</a></td>
+</tr>
+<tr>
+<td>Q-learning</td>
+<td>Q 学习</td>
+<td>用最大后继动作值作目标的异策略方法</td>
+<td><a href="week04-05.html#w4-5-7">W4–5 §7</a></td>
+</tr>
+<tr>
+<td>Expected Sarsa</td>
+<td>期望 Sarsa</td>
+<td>对后继状态的目标策略动作加权平均</td>
+<td><a href="week04-05.html#w4-5-9">W4–5 §9</a></td>
+</tr>
+<tr>
+<td>最大化偏差</td>
+<td>Maximization bias</td>
+<td>取带噪声估计的最大值可能系统性高估</td>
+<td><a href="week04-05.html#w4-5-10">W4–5 §10</a></td>
+</tr>
+<tr>
+<td>Double Q-learning</td>
+<td>双 Q 学习</td>
+<td>用不同估计分别选择与评价下一动作</td>
+<td><a href="week04-05.html#w4-5-10">W4–5 §10</a></td>
+</tr>
+<tr>
+<td>均方根误差</td>
+<td>RMS error</td>
+<td>状态预测误差平方平均后开根号，越小越好</td>
+<td><a href="week04-05.html#w4-5-5">W4–5 §5</a></td>
+</tr>
+</tbody></table></div>
+<h2 id="heading-8">8. 函数近似与深度价值学习</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文 / 记号</th>
+<th>含义</th>
+<th>详细解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>近似价值函数</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>v</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi mathvariant="bold">w</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mover accent="true"><mi>q</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo separator="true">,</mo><mi mathvariant="bold">w</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat v(s,\mathbf w),\hat q(s,a,\mathbf w)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord">^</span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbf" style="margin-right:0.01597em;">w</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbf" style="margin-right:0.01597em;">w</span><span class="mclose">)</span></span></span></span></td>
+<td>共享参数表示的状态 / 动作价值预测</td>
+<td><a href="week06.html#w6-1">W6 §1</a></td>
+</tr>
+<tr>
+<td>泛化</td>
+<td>Generalization</td>
+<td>一处经验影响其他状态的预测</td>
+<td><a href="week06.html#w6-2">W6 §2</a></td>
+</tr>
+<tr>
+<td>特征向量</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">x</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbf x(s)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbf">x</span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mclose">)</span></span></span></span></td>
+<td>用于表示状态的数值向量</td>
+<td><a href="week06.html#w6-2">W6 §2</a></td>
+</tr>
+<tr>
+<td>独热 / 多热</td>
+<td>One-hot / Multi-hot</td>
+<td>只有一个 / 可以多个激活位置的二值特征</td>
+<td><a href="week06.html#w6-2">W6 §2</a></td>
+</tr>
+<tr>
+<td>状态聚合</td>
+<td>State aggregation</td>
+<td>同组状态共享一个预测值</td>
+<td><a href="week06.html#w6-2">W6 §2</a></td>
+</tr>
+<tr>
+<td>粗编码</td>
+<td>Coarse coding</td>
+<td>以重叠区域等特征共享经验</td>
+<td><a href="week06.html#w6-2">W6 §2</a></td>
+</tr>
+<tr>
+<td>价值误差</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">V</mi><mi mathvariant="normal">E</mi></mrow><mo stretchy="false">(</mo><mi mathvariant="bold">w</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{VE}(\mathbf w)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">VE</span></span><span class="mopen">(</span><span class="mord mathbf" style="margin-right:0.01597em;">w</span><span class="mclose">)</span></span></span></span></td>
+<td>对状态按 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span></span></span></span> 加权的真值预测平方误差</td>
+<td><a href="week06.html#w6-3">W6 §3</a></td>
+</tr>
+<tr>
+<td>状态权重</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mu(s)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">μ</span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mclose">)</span></span></span></span></td>
+<td>表达状态重要性，常由访问频率体现</td>
+<td><a href="week06.html#w6-3">W6 §3</a></td>
+</tr>
+<tr>
+<td>预测梯度</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">∇</mi><mi mathvariant="bold">w</mi></msub><mover accent="true"><mi>v</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\nabla_{\mathbf w}\hat v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">∇</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1611em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathbf mtight" style="margin-right:0.01597em;">w</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2222em;"><span class="mord">^</span></span></span></span></span></span></span></span></span></span></td>
+<td>各参数改变如何影响当前预测</td>
+<td><a href="week06.html#w6-3">W6 §3</a></td>
+</tr>
+<tr>
+<td>梯度 MC</td>
+<td>Gradient Monte Carlo</td>
+<td>用完整回报误差乘预测梯度更新</td>
+<td><a href="week06.html#w6-4">W6 §4</a></td>
+</tr>
+<tr>
+<td>半梯度</td>
+<td>Semi-gradient</td>
+<td>本次求导固定自举目标，只对当前预测求导</td>
+<td><a href="week06.html#w6-6">W6 §6</a></td>
+</tr>
+<tr>
+<td>致命三角</td>
+<td>Deadly triad</td>
+<td>函数近似、自举、异策略共存可能导致不稳定</td>
+<td><a href="week06.html#w6-8">W6 §8</a></td>
+</tr>
+<tr>
+<td>深度 Q 网络</td>
+<td>Deep Q-Network，DQN</td>
+<td>用神经网络预测各动作回报，并结合回放与目标网络训练</td>
+<td><a href="week06.html#w6-9">W6 §9</a></td>
+</tr>
+<tr>
+<td>经验回放</td>
+<td>Experience replay，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">D</mi></mrow><annotation encoding="application/x-tex">\mathcal D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">D</span></span></span></span></td>
+<td>保存转移，抽样重用过去经验</td>
+<td><a href="week06.html#w6-9">W6 §9</a></td>
+</tr>
+<tr>
+<td>小批量</td>
+<td>Minibatch，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></td>
+<td>一次学习更新抽取的一组经验</td>
+<td><a href="week06.html#w6-9">W6 §9</a></td>
+</tr>
+<tr>
+<td>目标参数</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold">w</mi><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\mathbf w^-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">w</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">−</span></span></span></span></span></span></span></span></span></span></span></td>
+<td>用于自举目标的延迟参数副本</td>
+<td><a href="week06.html#w6-9">W6 §9</a></td>
+</tr>
+<tr>
+<td>终止标记</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">d_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></td>
+<td>终止为 1，此时省略后继自举项</td>
+<td><a href="week06.html#w6-9">W6 §9</a></td>
+</tr>
+<tr>
+<td>TD 误差裁剪</td>
+<td>TD-error clipping</td>
+<td>限制预测误差在更新中的贡献</td>
+<td><a href="week06.html#w6-10">W6 §10</a></td>
 </tr>
 </tbody></table></div>
 </article>

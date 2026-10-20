@@ -7,6 +7,8 @@
 - [第 1 周：强化学习导论](notes/week01.md)
 - [第 2 周：多臂老虎机](notes/week02.md) · [附录证明](notes/week02-appendix.md)
 - [第 3 周：MDP 与动态规划](notes/week03.md)
+- [第 4–5 周：基于价值的方法](notes/week04-05.md)
+- [第 6 周：价值函数近似与 DQN](notes/week06.md)
 - [术语表](notes/glossary.md)
 
 离线阅读：下载仓库后，用浏览器打开 `notes/index.html`。
